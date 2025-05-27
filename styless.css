@@ -1,0 +1,129 @@
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #040404;
+      color: white;
+      padding: 60px 20px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .lets-talk {
+      background-color: #1b263b;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .lets-talk h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+ 
+    
+
+    .footer-sections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: space-between;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+
+    .footer-section p, .footer-section a, .footer-section li {
+      color: #ddd;
+      font-size: 1rem;
+      
+      line-height: 2.0;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: #2ecc71;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #2ecc71;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #ffffff22;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .footer-sections {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .lets-talk h2 {
+        font-size: 1.5rem;
+      }
+      .footer-bottom {
+    border-top: 1px solid #ffffff22;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.7rem;
+    color: #ccc;
+}
+    }
+ 
