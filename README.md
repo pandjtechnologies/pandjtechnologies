@@ -1,1261 +1,1154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/crQGmf7/1-modified.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cars.css">
-        <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
-    <title>Trinadh tours and travels-Home</title>
-</head>
-<style>
-.parallax {
-   height: 300px;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-image: url('https://i.ibb.co/jL6Q062/Short-Term-Car-Rental.webp');
-   position: relative; /* Make sure the div is positioned relative for absolute positioning of text */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P&J Technologies</title>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
+  <link rel="stylesheet" href="styless.css">
 
-   
- }
-     a {
-    color: #000000;
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Playfair+Display:wght@700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   
-}
- *{
-   margin: 0%;
-   padding: 0%;
- }
-
- .parallax::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background color */
-   z-index: 1; /* Place it above the image */
- }
-
- .parallax-text {
-   position: absolute;
-   top: 50%; /* Adjust as needed to vertically center the text */
-   left: 50%; /* Adjust as needed to horizontally center the text */
-   transform: translate(-50%, -50%);
-   text-align: center;
-   color: #fff; /* Text color */
-   z-index: 2; /* Place it above the semi-transparent background */
-   white-space: nowrap;
- }
- @font-face {
- font-family: 'CustomFont'; /* Choose a name for your font */
- src: url('path-to-your-font.woff2') format('woff2'), /* Path to your font file */
-      url('path-to-your-font.woff') format('woff'); /* Path to your font file */
- font-weight: normal;
- font-style: normal;
-}
-
- .parallax-text h1 {
-  /* Choose a name for your font */
-  
- font-size: 38px;
- font-weight: 800;
- text-shadow: 1px 1px 2px rgba(209, 205, 186, 0.719);
- color: rgb(252, 250, 247);
- font-family: 'Gabriola', sans-serif;
- 
- /* Use the custom font followed by fallback fonts */
-}
-
-@import url('https://fonts.cdnfonts.com/css/gabriola');
-
-.parallax-text h2
-{
-  font-family: 'Gabriola', sans-serif;
-}
-
-.parallax-text {
-   font-size: 52px;
-   font-weight: 900;
-   text-shadow: 1px 1px 2px rgba(158, 157, 152, 0.719);
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                               
- }
-
- /* Change the color for "YOUR" */
- .your-text {
-   color:  rgb(255, 187, 0); /* Replace with your desired color code or color name */
- }
-
- /* Change the color for "CAR" */
- .carfu-text {
-   color:  rgb(255, 187, 0); /* Replace with your desired color code or color name */
- }
-
-
- @media (max-width: 768px) {
-  .parallax {
-  height:300px;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-image: url('https://i.ibb.co/Thvg8c3/blue-bg.jpg');
-   
-   position: relative; /* Make sure the div is positioned relative for absolute positioning of text */
-
-   
- }
-
-   
-   .parallax-text h1 {
-     font-size: 24px; /* Decrease font size for mobile */
-     padding-bottom:20%;
-   }
-   
-   .parallax-text h2 {
-     font-size: 22px; /* Decrease font size for mobile */
-   }
-   
-  .parallax{
-   height: 200px;
-  }
-
- }
- 
-</style>
-<style>
-  .reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-  }
-  .reveal.active{
-    opacity: 1;
-    transform: translateY(0px);
-  }
- 
-</style>
-<body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <img style="width: 80px; height: 80px; border-radius: 50%;" class="imagelog" src="https://i.ibb.co/crQGmf7/1-modified.png">
-              <a class="navbar-brand" href="#">&nbsp;Trinadh Tours and Travels</a>
-              <ul class="navbar-nav mx-auto mt-2 mt-lg-0 justify-content-center" > <!-- Added mx-auto and justify-content-center classes -->
-                  <li class="nav-item active" >
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="aboutus.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact us.html"><span class="sr-only">(current)</span>Contact</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="carslist.html">Our Cars</a>
-                  </li>
-                 
-              </ul>
-            <a href="https://api.whatsapp.com/send/?phone=918698209999&text&type=phone_number&app_absent=0" class="btn btn-outline-success my-2 my-sm-0">Book Now</a>
-
-            </form>
-        </div>
-    </nav>
-
-   
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- <!-- Your content goes here -->
- <link href="https://fonts.cdnfonts.com/css/gabriola" rel="stylesheet">
- <div class="slider-container">
-  <div class="slider">
-      <div class="slide">
-          <img src="https://i.ibb.co/RpBrqX1/Trinadh-tours-and-travels-21.png" alt="Image 1" class="image">         
-      </div>    
-      <div class="slide">
-          <img src="https://i.ibb.co/5xdVDB0/best-CAR-for-rental-3.png " alt="Image 2" class="image">     
-      </div>
-      <div class="slide">
-          <img src="https://i.ibb.co/TYrq7VL/best-CAR-for-rental-4.png" alt="Image 3" class="image">
-         
-      </div>
-  </div>
-</div>
-
-
-<script>
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  let counter = 0;
-
-  function moveSlide() {
-      counter++;
-      if (counter === slides.length) {
-          counter = 0;
-      }
-      slider.style.transform = `translateX(-${counter * 100}%)`;
-  }
-
-  setInterval(moveSlide, 5000); // Change slide every 5 seconds
-</script>
-<style>
-  .needhelp{
-    background-color: #e9ecef;;font-size: 30px; text-align: center;color: rgb(0, 0, 0);
-   font-weight:900px;
-    font-family: sans-serif;
-    font-style: oblique;
-   
-  }
-
-  @media (max-width: 768px){
-.needhelp {
-    padding-top: 0px;
-    font-size: 19px;
-    font-weight: 600;
-    background-color: #e9ecef;
-    color: #000811;
-    font-family: sans-serif;
-    font-style: oblique;
-  }
-.slider-container{
-    height: 350px;
-  }
-  }
-     .getthe {
-  font-size: 29px;
-  font-weight: 600;
-  text-align: center;
-}
-
-/* Mobile Styles (for screens up to 768px wide, adjust as needed) */
-@media (max-width: 768px) {
-  .getthe {
-     /* Adjust font size for mobile */
-    font-size: 20px;
-    padding-top: 40px;
-    font-family: sans-serif;
-    font-weight: 700;
-    /* Add other mobile-specific styles here */
-  }
-}
-
-
-</style>
-<style>
-  /* Styles for laptops and desktops (screen width 768px and above) */
-  @media screen and (min-width: 768px) {
-      .slider-container143 {
-          position: relative;
-          width: 100%;
-          height: 600px;
-          overflow: hidden;
-      }
-
-      .text-overlays143 h2 {
-          padding-top: 160px;
-          
-      }
-
-      .slider143 {
-          display: flex;
-          transition: transform 1s ease-in-out;
-      }
-
-      .slide143 {
-          width: 100%;
-          object-fit: cover; 
-          flex-shrink: 0;
-          position: relative;
-      }
-
-      .slide143 img {
-          width: 100%;
-          max-height: 600px; /* Use max-height to maintain aspect ratio */
-          height: 600px;
-      }
-
-      .text-overlays143 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          color: white;
-          display: flex;
-          background-color: rgba(0, 0, 0, 0.5);
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          text-align: center;
-      }
-
-      /* Increase font size for larger screens */
-      .text-overlays143 h2 {
-          font-size: 42px; /* Adjust the font size as needed */
-        /* Add text shadow */
-          /* Increase letter spacing for unique style */
-          font-weight: 900;
-          text-shadow: 1px 4px 2px rgb(0, 8, 43);/* Add font weight for emphasis */
-          text-transform: uppercase;
-      }
-
-      .text-overlays143 p {
-          font-size: 28px;
-          margin: 0; /* Remove default margin */
-          padding: 10px 0; /* Add some padding at the bottom */
-          text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7); /* Add text shadow */
-          /* Add italic style for uniqueness */
-      }
-  }
-
-  /* Styles for mobile devices (screen width up to 767px) */
-  @media screen and (max-width: 767px) {
-      .slider-container143 {
-          display: none; /* Hide the slider container on mobile devices */
-      }
-  }
-</style>
-<div class="slider-container143">
-  <div class="slider143">
-      <div class="slide143">
-          <img src="https://i.ibb.co/T1sFt82/Trinadh-tours-and-travels-24.png" alt="Image 1" class="image143">         
-          
-      </div>    
-      <div class="slide143">
-           <img src="https://i.ibb.co/Gv9Xv0g/prakasam-barrage.jpg" alt="Image 2" class="image143">
-          <div class="text-overlays143">
-              <h2>AP'S Largest Car Travels with<span class="carfu-text">100+ vehicles</span></h2>      
-          </div> 
-        
-      </div>
-      <div class="slide143">
-          <img src="https://i.ibb.co/VwJjh6S/side.jpg" alt="Image 3" class="image143">
-          <div class="text-overlays143">
-              <h2>Explore the World with Trinadh <span class="carfu-text">Tours and Travels</span></h2>      
-          </div>
-      </div>
-  </div>
-</div>
-<script>
-  const slider143 = document.querySelector('.slider143');
-  const slides143 = document.querySelectorAll('.slide143');
-  let counter143 = 0;
-
-  function moveSlide143() {
-      counter143++;
-      if (counter143 === slides143.length) {
-          counter143 = 0;
-      }
-      slider143.style.transform = `translateX(-${counter143 * 100}%)`;
-  }
-
-  setInterval(moveSlide143, 5000); // Change slide every 5 seconds
-</script>
-
-<p class="needhelp">Contact Us <a href="tel:+918698209999">+91 8698209999 </a> <a href="tel:+918885277553">+91 8885277553</a></p>
-
-
-  <h2 class="getthe">Get The Best Offers</h2>
-<div class="parallax">
-  <div class="parallax-text">
-    <h1>OUR VEHICLES</h1>
-  
-<h2 class="parallax-text">CHOOSE <span class="your-text">YOUR</span> PERFECT <span class="carfu-text">CAR</span></h2>
-  </div>
-</div>
-
-<div class="car-list reveal">
-  <!-- Etios -->
-  <div class="car reveal">
-      <img src="https://i.ibb.co/12vdJ36/toyota-etios-car-rental-services-1000x1000.webp" alt="Car 2" >
-    
-      <div class="car-details">
-        
-        <div class="car-price">Etios</div>
-        <div class="car-name">Car 1</div>
-      </div>
-      <div class="toggle-buttons">
-        <button class="toggle-button active" data-tab="1">Day Rent</button>
-        <button class="toggle-button" data-tab="2">Regular  </button>
-        <button class="toggle-button" data-tab="3">Out station</button>
-        
-        <div class="content active" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: block;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>Duration</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12 Hrs</td>
-              <td>1200</td>
-            </tr>
-          
-            
-            <tr>
-              <td>Fuel Charge</td>
-              <td>10 Km/ 1 Litre</td>
-            </tr>
-            <tr>
-              <td>Chauffeur Allowance</td>
-              <td>300</td>
-            </tr>
-            <tr>
-              <td>Extra Hr</td>
-              <td>200</td>
-            </tr>
-            <tr>
-                <td>24 Hrs</td>
-                <td>1800</td>
-              </tr>
-            <tr>
-                <td>Chauffeur Allowance</td>
-                <td>500</td>
-              </tr>
-          </tbody>
-          </table>
-          </br>
-      
-    
-  </div>
-         
-        <div class="content" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-              <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>&nbsp;4 Hrs-40KMS &nbsp;</td>
-              <td>&nbsp;1200 &nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;8 Hrs-80KMS&nbsp;</td>
-              <td>&nbsp;2000&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;EXTRA HOUR&nbsp;&nbsp;&nbsp;</td>
-              <td>&nbsp;200&nbsp;</td>
-            </tr>
-            
-            <tr>
-              <td>&nbsp;&nbsp;&nbsp;Extra Km&nbsp;</td>
-              <td>&nbsp;&nbsp;&nbsp;13&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
-      </br>
-    </br>
-  </br>
-</br>
-</br>
-        </div>
-        <div class="content1" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>Duration&nbsp;&nbsp;&nbsp;</th>
-              <th>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>RATE PER EACH KM</td>
-              <td>13</td>
-            </tr>
-            <tr>
-              <td>Chauffeur Allowance</td>
-              <td>500</td>
-            </tr>
-            
-          </tbody>
-        </table>
-        </br>
-
-
-      </div>
-      
-      </div> 
-
-      <a href="https://api.whatsapp.com/send/?phone=918698209999&text&type=phone_number&app_absent=0" class="btn btn-outline-success my-2 my-sm-0">Book Now</a>
-
-  </div>
-  <div class="car reveal">
-    <!-- Dezire/etios -->
-   <img src="https://i.ibb.co/LhVkzxz/PEARL-ARCTIC-WHITE-939393.webp" alt="Car 2">
-   <div class="car-details">
-     
-     <div class="car-price">SWIFT DEZIRE</div>
-     <div class="car-name">Car-2</div>
-   </div>
-      <div class="tab-container">
-        <button class="tab-button active" data-tab="1">Day Rent</button>
-        <button class="tab-button" data-tab="2">Regular</button>
-        <button class="tab-button" data-tab="3">Out station</button>
-        
-        <div class="content10 active" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: block;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>Duration</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12 Hrs</td>
-              <td>1200</td>
-            </tr>
-          
-            
-            <tr>
-              <td>Fuel Charge</td>
-              <td>10 Km/ 1 Litre</td>
-            </tr>
-            <tr>
-              <td>Chauffeur Allowance</td>
-              <td>300</td>
-            </tr>
-            <tr>
-              <td>Extra Hr</td>
-              <td>200</td>
-            </tr>
-            <tr>
-                <td>24 Hrs</td>
-                <td>1800</td>
-              </tr>
-            <tr>
-                <td>Chauffeur Allowance</td>
-                <td>500</td>
-              </tr>
-          </tbody>
-        </table>
-        </br>
-
-        </div>
-         
-        <div class="content10" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-              <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>&nbsp;4 Hrs-40KMS &nbsp;</td>
-              <td>&nbsp;1200 &nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;8 Hrs-80KMS&nbsp;</td>
-              <td>&nbsp;2000&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;EXTRA HOUR&nbsp;&nbsp;&nbsp;</td>
-              <td>&nbsp;200&nbsp;</td>
-            </tr>
-            
-            <tr>
-              <td>&nbsp;&nbsp;&nbsp;Extra Km&nbsp;</td>
-              <td>&nbsp;&nbsp;&nbsp;13&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
-      </br>
-    </br>
-  </br>
-</br>
-</br>
-        </div>
-        
-        <div class="content10" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>Duration&nbsp;&nbsp;&nbsp;</th>
-              <th>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>RATE PER EACH KM</td>
-              <td>13</td>
-            </tr>
-            <tr>
-              <td>Chauffeur Allowance</td>
-              <td>500</td>
-            </tr>
-            
-          </tbody>
-        </table>
-        </br>
-       </div>
-        
-      </div>
-    
-      <a href="https://api.whatsapp.com/send/?phone=918698209999&text&type=phone_number&app_absent=0" class="btn btn-outline-success my-2 my-sm-0">Book Now</a>
-
-  </div>
- 
-  <div class="car reveal">
-    <!--Innova -->
-   <img src="https://i.ibb.co/LCZSJRB/PHOTO-2023-09-07-18-06-27.jpg" alt="Car 2">
-   <div class="car-details">
-     <div class="car-price">Innova</div>
-     <div class="car-name">Car-3</div>
-   </div>
-      <div class="tab-container1">
-          <button class="tab-button1 active" data-tab="1">Day Rent</button>
-          <button class="tab-button1" data-tab="2">Regular</button>
-          <button class="tab-button1" data-tab="3">Out station</button>
-      
-        
-        <div class="content12 active" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: block;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>Duration</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12 Hrs</td>
-              <td>2000</td>
-            </tr>
-          
-            
-            <tr>
-              <td>Fuel Charge</td>
-              <td>8Km/ 1 Litre</td>
-            </tr>
-            <tr>
-              <td>Chauffeur Allowance</td>
-              <td>500</td>
-            </tr>
-            <tr>
-              <td>Extra Hr</td>
-              <td>300</td>
-            </tr>
-            <tr>
-                <td>24 Hrs</td>
-                <td>3000</td>
-              </tr>
-            <tr>
-                <td>Chauffeur Allowance</td>
-                <td>700</td>
-              </tr>
-          </tbody>
-        </table>
-        </br>
-        </div>
-         
-        <div class="content12" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-              <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>&nbsp;4 Hrs-40KMS &nbsp;</td>
-              <td>&nbsp;2500 &nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;8 Hrs-80KMS&nbsp;</td>
-              <td>&nbsp;3000&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;EXTRA HOUR&nbsp;&nbsp;&nbsp;</td>
-              <td>&nbsp;300&nbsp;</td>
-            </tr>
-            
-            <tr>
-              <td>&nbsp;&nbsp;&nbsp;Extra Km&nbsp;</td>
-              <td>&nbsp;&nbsp;&nbsp;17&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
-       
-      </br>
-    </br>
-  </br>
-</br>
-</br>
-        </div>
-        <div class="content12" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-        </br>
-        <table>
-          <thead>
-            <tr>
-              <th>Duration&nbsp;&nbsp;&nbsp;</th>
-              <th>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>RATE PER EACH KM</td>
-              <td>17</td>
-            </tr>
-            <tr>
-              <td>Chauffeur Allowance</td>
-              <td>700</td>
-            </tr>
-            
-          </tbody>
-        </table>
-        </br>
-       </div>
-       <a href="https://api.whatsapp.com/send/?phone=918698209999&text&type=phone_number&app_absent=0" class="btn btn-outline-success my-2 my-sm-0">Book Now</a>
-      
-      </div>
-      
-  
-  <!--  cars here -->
-
-</div>
-<div class="car reveal">
-  <!-- crysta -->
- <img src="https://i.ibb.co/J521ZCf/c-h-6-500x500.webp" alt="Car 2">
- <div class="car-details">
- 
- <div class="car-price">CRYSTA</div>
- <div class="car-name">Car-4</div>
- </div>
-  <div class="tab-container12">
-      <button class="tab-button12 active" data-tab="1">Day Rent</button>
-      <button class="tab-button12 " data-tab="2">Regular</button>
-      <button class="tab-button12" data-tab="3">Out station</button>
-    
-    <div class="content22 active" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: block;">
-    </br>
-    <table>
-      <thead>
-      <tr>
-       <th>Duration</th>
-       <th>Price</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-       <td>12 Hrs</td>
-       <td>2500</td>
-      </tr>
-      
-      
-      <tr>
-       <td>Fuel Charge</td>
-       <td>8 Km/ 1 Litre</td>
-      </tr>
-      <tr>
-       <td>Chauffeur Allowance</td>
-       <td>500</td>
-      </tr>
-      <tr>
-       <td>Extra Hr</td>
-       <td>350</td>
-      </tr>
-      <tr>
-         <td>24 Hrs</td>
-         <td>3500</td>
-       </tr>
-      <tr>
-         <td>Chauffeur Allowance</td>
-         <td>700</td>
-       </tr>
-      
-      </tbody>
-      </table>
-
-    </div>
-     
-    <div class="content22" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-    </br>
-    <table>
-      <thead>
-        <tr>
-          <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-          <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&nbsp;4 Hrs-40KMS &nbsp;</td>
-          <td>&nbsp;3000 &nbsp;</td>
-        </tr>
-        <tr>
-          <td>&nbsp;8 Hrs-80KMS&nbsp;</td>
-          <td>&nbsp;4000&nbsp;</td>
-        </tr>
-        <tr>
-          <td>&nbsp;EXTRA HOUR&nbsp;&nbsp;&nbsp;</td>
-          <td>&nbsp;350&nbsp;</td>
-        </tr>
-        
-        <tr>
-          <td>&nbsp;&nbsp;&nbsp;Extra Km&nbsp;</td>
-          <td>&nbsp;&nbsp;&nbsp;19&nbsp;</td>
-        </tr>
-      </tbody>
-    </table>
-  </br>
-</br>
-</br>
-</br>
-    </div>
-    <div class="content22" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-6831" tabindex="0" style="display: none;">
-  </br>
-  <table>
-    <thead>
-      <tr>
-        <th>Duration&nbsp;&nbsp;&nbsp;</th>
-        <th>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>RATE PER EACH KM</td>
-        <td>19</td>
-      </tr>
-      <tr>
-        <td>Chauffeur Allowance</td>
-        <td>700</td>
-      </tr>
-      
-    </tbody>
-  </table>
-  </br>
- </div>
-   
-  </div>
-</br>
-<a href="https://api.whatsapp.com/send/?phone=918698209999&text&type=phone_number&app_absent=0" class="btn btn-outline-success my-2 my-sm-0">Book Now</a>
-
-</div>
-
-<script>
-  // Select all toggle buttons
-const buttons = document.querySelectorAll('.toggle-button');
-
-// Select all content sections
-const contents = document.querySelectorAll('.content');
-
-// Select all content1 sections
-const content1 = document.querySelectorAll('.content1');
-
-// Add click event listeners to buttons
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const tab = button.dataset.tab;
-
-    // Remove 'active' class from all buttons
-    buttons.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-
-    // Hide all content sections
-    contents.forEach((content) => {
-      content.style.display = 'none';
-    });
-
-    // Hide all content1 sections
-    content1.forEach((content1) => {
-      content1.style.display = 'none';
-    });
-
-    // Show the selected content section and add 'active' class to the clicked button
-    contents.forEach((content) => {
-      if (content.dataset.tab === tab) {
-        content.style.display = 'block';
-      }
-    });
-
-    content1.forEach((content1) => {
-      if (content1.dataset.tab === tab) {
-        content1.style.display = 'block';
-      }
-    });
-
-    button.classList.add('active');
-  });
-});
-
-
-// Select all tab buttons
-const tabButtons = document.querySelectorAll('.tab-button');
-
-// Select all content sections
-const contentSections = document.querySelectorAll('.content10');
-
-// Add click event listeners to tab buttons
-tabButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const tab = button.dataset.tab;
-
-    // Remove 'active' class from all tab buttons
-    tabButtons.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-
-    // Hide all content sections
-    contentSections.forEach((content) => {
-      content.style.display = 'none';
-    });
-
-    // Show the selected content section and add 'active' class to the clicked tab button
-    contentSections.forEach((content) => {
-      if (content.dataset.tab === tab) {
-        content.style.display = 'block';
-      }
-    });
-
-    button.classList.add('active');
-  });
-});
-
-
-
-// Select all tab buttons
-const tabButtons1 = document.querySelectorAll('.tab-button1');
-
-// Select all content sections
-const contentSections1 = document.querySelectorAll('.content12');
-
-// Add click event listeners to tab buttons
-tabButtons1.forEach((button) => {
-  button.addEventListener('click', () => {
-    const tab = button.dataset.tab;
-
-    // Remove 'active' class from all tab buttons
-    tabButtons1.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-
-    // Hide all content sections
-    contentSections1.forEach((content) => {
-      content.style.display = 'none';
-    });
-
-    // Show the selected content section and add 'active' class to the clicked tab button
-    contentSections1.forEach((content) => {
-      if (content.dataset.tab === tab) {
-        content.style.display = 'block';
-      }
-    });
-
-    button.classList.add('active');
-  });
-});
-
-
-
-// Select all tab buttons
-const tabButtons12 = document.querySelectorAll('.tab-button12');
-
-// Select all content sections
-const contentSections12 = document.querySelectorAll('.content22');
-
-// Add click event listeners to tab buttons
-tabButtons12.forEach((button) => {
-  button.addEventListener('click', () => {
-    const tab = button.dataset.tab;
-
-    // Remove 'active' class from all tab buttons
-    tabButtons12.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-
-    // Hide all content sections
-    contentSections12.forEach((content) => {
-      content.style.display = 'none';
-    });
-
-    // Show the selected content section and add 'active' class to the clicked tab button
-    contentSections12.forEach((content) => {
-      if (content.dataset.tab === tab) {
-        content.style.display = 'block';
-      }
-    });
-
-    button.classList.add('active');
-  });
-});
-  </script>
-</div>
-<script src="script.js"></script>  
-</br>
-<div class="cousnt123654">
-    <a href="carslist.html">
-        <button class="buncars1304 reveal">View all cars</button>
-    </a>
-</div>
-</br>
-</br>
-<div class="experienceservice reveal">
-  
-  <div class="image-experience123 reveal">
-    <img src="https://i.ibb.co/4SVhtVb/opt.png">
-  </div>
-  <div class="contentexperiences123">
-    <h3 class="protocols">Feel The Best Experience With Our Services</h3>
-    <div class="subtitle">Our services are categorized under 3 segments:</div>
-    <div class="elementor-icon elementor-animation-">
-      <i aria-hidden="true" class="icon icon-cog"></i>
-    </div>
-    <div class="segment reveal">
-      <img src="https://i.ibb.co/mcJFTtZ/protocols.png">
-      <h1>Govt Protocol:</h1>
-    </div>
-    <p>
-      We have been providing vehicles to the government through protocol and also to the Head Of Departments and commissioners of the respective govt departments.
-    </p>
-    <div class="segment reveal">
-      <img src="https://i.ibb.co/Kyp9nTV/luxurysegment.png">
-      <h1>Luxury segment</h1>
-    </div>
-    <p>
-      We offer luxury cars namely Audi Q7, BMW 7series, and Mercedes C 220, etc. For Govt officials, Celebrities, foreign delegates, and also for events like marriages, etc.
-    </p>
-    <div class="segment reveal">
-      <img src="https://i.ibb.co/wQRqdfs/outstation.png">
-      <h1>Local and Outstation services.</h1>
-    </div>
-    <p>
-      We also provide vehicles on KM basis and also Day basis like in tour packages, long trips, or wedding packages, etc.
-    </p>
-  </div>
-</div>
-</br>
-
-<h2 class="main-comfort reveal">Your comfort and convenience are our first priority</h2>
-<p class="subcomfort reveal">You can trust us to do our job in delivering cars on time and up to your expectations, 100% of the time, all the time.</p>
-</br></br></br>
-<div class="service-container reveal">
-  <div class="service-box">
-    <div class="icon-container">
-      <img src="https://i.ibb.co/3djqwYr/car-icon.jpg" style="width: 15%; height: 18%;">
-      <h6 style="text-align: center;">&nbsp;SAFETY &amp; COMFORT</h6>
-    </div>
-  </br>
-    <p class="service-paragraph ">Your safety and comfort are our first priority. A complete GPS tracking of the vehicle is also maintained. Every vehicle is well maintained regularly and proper maintenance tests take place before the commencement of any trip. All vehicles are maintained with perfect and updated vehicle records</p>
-  </div>
-  <div class="service-box" style="background-color: #268040;"></br>
-    <div class="icon-container reveal"></br>
-      <img src="https://i.ibb.co/vXtn8BJ/prof.jpg" style="width: 32px;">
-      <h6 style="text-align: center;">&nbsp;PROFESSIONAL</h6>
-    </div>
-  </br>
-    <p class="service-paragraph ">All our chauffeurs and employees are well trained and professionals. Our chauffeurs are recruited only after passing multiple tests like driving, behavior, maintenance etc. They arrive at duty in well-groomed uniforms.</p>
-  </div>
-  <div class="service-box reveal">
-  </br><div class="icon-container">
-      <img src="https://i.ibb.co/K2kFFS7/24png.png" style="width: 37px;">
-      <h6 style="text-align: center;">&nbsp;24/7 SERVICE</h6>
-    </div></br>
-    <p class="service-paragraph ">We’re always at your fingertips and a call away to help you with our services. You can call us anytime and get your journey started or even get your queries clarified from our well-supportive team.</p>
-  </div>
-</div>
-</br></br></br>
-<div class="container987 reveal">
-
-<div class="content53">
-  <div class="arrow left">&lt;</div>
-  <div class="heading53">Our Customers Love Us!</div>
-  <div class="mini-box">
-    <br /><br /><br />
-    <p>"Experience was great traveling with this cabs service rental. The rates were affordable, driver was good, and the overall experience was also awesome. </p>
-    <h2 style="font-size: 24px; font-family: 'Brush Script MT', cursive; color:	#8686d1;margin-top: 28px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bhargav</h2>
-  </div>
-  <div class="mini-box">
-    <br /><br /><br /><br />
-    <p>"Excellent service provided by reliable car rentals. Disciplined pickup and drop and good quality of car provided</p>
-    <h2 style="font-size: 24px; font-family: 'Brush Script MT', cursive; color:	#8686d1;margin-top: 28px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rama Krishna</h2>
-  </div>
-  <div class="mini-box">
-    <br /><br /><br /><br />
-    <p>"Best service with good price, nice driver, nice vehicle overall very good. I will recommend it to all of you</p>
-    <h2 style="font-size: 24px; font-family: 'Brush Script MT', cursive; color:	#8686d1;margin-top: 28px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rishita</h2>
-  </div>
-  <div class="mini-box">
-    <br /><br />
-    <p>"5 out of 5. I have tried many car rental services in Vijayawada and found that Rayudu Travels is the best and professional among all. They have very professional drivers who are very caring, loyal</p>
-    <h2 style="font-size: 24px; font-family: 'Brush Script MT', cursive; color:	#8686d1;margin-top: 28px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manasa</h2>
-  </div>
-  <div class="mini-box">
-    <br /><br /><br />
-    <p>"Very good service, totally satisfied. The driver was very genial and loved his work. I had an occasion to engage your services on April from Vijayawada to Secunderabad</p>
-    <h2 style="font-size: 24px; font-family: 'Brush Script MT', cursive; color:	#8686d1;margin-top: 28px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Santhi Dutha</h2>
-  </div>
-  <div class="mini-box">
-    <br /><br /><br />
-    <p>"Excellent service provided by reliable car rentals. Disciplined pickup and drop and good quality of car provided</p>
-    <h2 style="font-size: 24px; font-family: 'Brush Script MT', cursive; color:	#8686d1;margin-top: 28px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pradeep</h2>
-  </div>
-  <div class="arrow right">&gt;</div>
-</div>
-<img class="mapimage" style="width: 55%;height: 650px;"src="https://i.ibb.co/ZKw4SJs/213-2139247-india-map-png-transparent-indian-map-with-people.jpg">
-
-
-</div>
-</div>
-
-<script>
-
-  var miniBoxes = document.querySelectorAll('.mini-box');
-  var currentIndex = 0;
-
-  function showMiniBox(index) {
-    for (var i = 0; i < miniBoxes.length; i++) {
-      miniBoxes[i].style.display = 'none';
+  <!-- AOS Animate On Scroll CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    html, body { height: 100%; font-family: 'Poppins', sans-serif; background: #ffffff; }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      color: white;
+      overflow: hidden;
     }
-    miniBoxes[index].style.display = 'block';
-  }
 
-  function showNextMiniBox() {
-    currentIndex = (currentIndex + 1) % miniBoxes.length;
-    showMiniBox(currentIndex);
-  }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      z-index: 0;
+    }
 
-  function showPreviousMiniBox() {
-    currentIndex = (currentIndex - 1 + miniBoxes.length) % miniBoxes.length;
-    showMiniBox(currentIndex);
-  }
+    .hero::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
 
-  // Add click event listeners to arrows
-  document.querySelector('.arrow.left').addEventListener('click', showPreviousMiniBox);
-  document.querySelector('.arrow.right').addEventListener('click', showNextMiniBox);
+    header {
+      position: absolute; top: 0; width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
+      z-index: 2;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  // Show the first mini box initially
-  showMiniBox(currentIndex);
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-  // Automatically show the next mini box every 3 seconds
-  setInterval(showNextMiniBox, 5000);
-</script>
-</br>
-</div>
-</body>
-<link
-rel="stylesheet"
-href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-crossorigin="anonymous"
-/>
-<footer>
-<div class="container reveal">
-<div class="sec aboutus">
-  <h2 style="text-align: left;padding-top: 0%">Location</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1952913.6025989961!2d78.195996!3d17.0587369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35efc22bc560b7%3A0x687ec5a940dc83!2sTrinadh%20tours%20and%20travels!5e0!3m2!1sen!2sin!4v1694447371061!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    .logo-area img {
+      height: 60px;
+    }
 
-  <ul class="sci">
-    <li>
-      <a href="https://www.facebook.com/profile.php?id=61551121944330&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
-    </li>
-    
-    <li>
-      <a href="https://instagram.com/trinadhtoursandtravels?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/channel/UCf3Sx0KP91T-MJjdLYaEunA"><i class="fab fa-youtube"></i></a>
-    </li>
-    <li>
-      <a href="mailto:Trinadhtoursandtravels@gmail.com">
-        <img src="https://i.ibb.co/qphmBbT/maillog.png"style="width: 12px;heigth:15px"; alt="Gmail Logo">
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="sec quicklink">
- 
-<div class="sec contact">
-   
-  <h2 style="text-align: left; padding-top: 0%;">Contact Us</h2>
-  <ul class="info">  
-    <li> 
-      <span><i class="fad fa-map-marker-alt"></i></span>
-      <p>
-        1-3-198, Cement Road</br>Beside Sachivalayam</br>
-         Vidhyadharapuram</br>
-         Vijayawada-520012
-       </p>
-    </li>                    
-    <li>
-        
-      <span><i class="fad fa-phone"></i></span>
-      <p>
-        <a href="tel:+918698209999">+91 8698209999</a> <br />
-        <a href="tel:+918885277553">+91 8885277553</a>
-      </p>
-    </li>
-    <li>
-      <span><i class="fad fa-envelope"></i></span>
-      <p>
-        <a href="mailto:TRINADHTOURSANDTRAVELS@GMAIL.COM">trinadhtoursandtravels@gmail.com</a>
+    .logo-area span {
+      font-size: 2.5em;
+      color: white;
+      font-weight: bold;
+      font-family: noto serif display;
+      font-style: italic;
+    }
 
-        
-      </p>
-    </li> 
-  </ul> 
-</div>
-</div>
+    nav {
+      display: flex;
+      gap: 80px;
+    }
 
-  <div class="logo-container">
-    <a href="index.html"><img src="https://i.ibb.co/crQGmf7/1-modified.png" alt="log" class="logo123"></a>
-  </div>
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
 
-</footer>
-<div class="copyrightText">
-  <p>@ 2023 Trinadh Tours and Travels | Designed By JS Projects.</p>
-  </div>
-    <script type="text/javascript">
-      window.addEventListener('scroll', reveal);
-    
-      function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-    
-        for (var i = 0; i < reveals.length; i++) {
-    
-          var windowheight = window.innerHeight;
-          var revealtop = reveals[i].getBoundingClientRect().top;
-          var revealpoint = 150;
-    
-          if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add('active');
-          } else {
-            reveals[i].classList.remove('active');
-          }
-        }
+    nav a:hover { color: #00e1ff; }
+
+    .hamburger {
+      display: none;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 270px;
+      height: 100vh;
+      background: rgba(25, 25, 25, 0.8);
+      backdrop-filter: blur(10px);
+      border-right: 2px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 4px 0 15px rgba(0, 0, 0, 0.4);
+      padding: 70px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      transition: left 0.4s ease-in-out;
+      z-index: 1000;
+    }
+
+    .sidebar.active { left: 0; }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 4px;
+      background: #00e1ff;
+      transform: scaleY(0);
+      transition: transform 0.3s ease;
+      transform-origin: top;
+    }
+
+    .sidebar a:hover::before { transform: scaleY(1); }
+    .sidebar a:hover { color: #00e1ff; }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px 12px;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 4em;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 1.1;
+      color: white;
+    }
+
+    .hero-content h1 span.purple {
+      color: #a100ff;
+      text-shadow: 0 0 12px rgba(161, 0, 255, 0.6);
+    }
+
+    .hero-content h2 {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #ffffff;
+      margin-top: 33px;
+    }
+
+    .section {
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      scroll-margin-top: 120px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      background: white;
+      color: #000;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger {
+        display: block;
+        position: absolute;
+        left: 20px;
       }
-    </script>
-    
+      header { justify-content: center; }
+      .hero-content h1 { font-size: 3em; }
+      .logo-area img { height: 36px; }
+      .logo-area span {
+        font-size: 1.5em;
+        color: white;
+        font-weight: bold;
+        font-family: noto serif display;
+        font-style: italic;
+      }
+      .hero-content h1 {
+        font-size: 1.5em;
+        padding-top: 30px;
+      }
+      .hero {
+        height: 65vh;
+      }
+      .hero-content h2 {
+        font-size: 0.7em;
+        margin-top: 75px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero" id="home">
+    <div id="particles-js"></div>
+
+    <header>
+      <div class="hamburger" onclick="toggleSidebar()">☰</div>
+      <div class="logo-area">
+        <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo">
+        <span>P<span style="font-size: 15px;font-style: normal;">&</span>J Technologies</span>
+      </div> 
+      <nav>
+        <a href="#home">Dashboard</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Let's Talk</a>
+      </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleSidebar()">×</div>
+      <a href="#home" onclick="toggleSidebar()">🏠 Dashboard</a>
+      <a href="#about" onclick="toggleSidebar()">👤 About Us</a>
+      <a href="#services" onclick="toggleSidebar()">⚙️ Our Services</a>
+      <a href="#contact" onclick="toggleSidebar()">📞 Let's Talk</a>
+    </div>
+
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Innovative Solution <br>For Your<span class="purple">&nbsp;</span>Business</h1>
+      <h2 data-aos="fade-up" data-aos-delay="300">Empowering businesses with next-generation technology and transformation.</h2>
+    </div>
+  </div>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
       
+      background-color: #f4f7fb;
+      color: #1c1c1c;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    .pj-about-heading {
+      font-family: 'Quicksand', sans-serif;
+      color: #1F3A93;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .pj-about-container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .pj-about-text {
+      flex: 1;
+     
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #2c2c2c;
+      text-align: justify;
+    }
+
+    .pj-gallery {
+      flex: 1;
+    }
+
+    .pj-slideshow {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .pj-slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out, transform 1s ease;
+    }
+
+    .pj-slide.active {
+      opacity: 1;
+      transform: scale(1.03);
+      z-index: 1;
+    }
+
+    @media(min-width: 768px) {
+      .pj-about-container {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="pj-about-heading"id="about">About Us</h2>
+
+  <div class="pj-about-container">
+    <div class="pj-about-text">
+      <p>Welcome to our company at <strong>P&J Technologies</strong>, we are passionate about leveraging technology to build intelligent, scalable, and innovative digital solutions for businesses of all sizes. Founded with a vision to become a trusted partner in IT services and consulting, we specialize in delivering customized software, web and mobile applications, cloud solutions, and digital transformation services that drive measurable results.</p>
+      <p>Our team comprises experienced professionals, creative thinkers, and technology enthusiasts committed to delivering excellence and exceeding client expectations. We believe that success in the digital world comes from strong collaboration, future-focused innovation, and an unwavering dedication to quality. We continuously invest in the latest technologies and methodologies to ensure our solutions remain ahead of the curve. Join us on a journey to transform your business challenges into powerful digital opportunities.</p>
+    </div>
+
+    <div class="pj-gallery">
+      <div class="pj-slideshow">
+        <img class="pj-slide active" src="https://i.ibb.co/tp0KqJKs/p-4.png" alt="Slide 1">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=2" alt="Slide 2">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=3" alt="Slide 3">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=4" alt="Slide 4">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=5" alt="Slide 5">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=6" alt="Slide 6">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=7" alt="Slide 7">
+        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=8" alt="Slide 8">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll('.pj-slide');
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+          if (i === index) slide.classList.add('active');
+        });
+      }
+
+      showSlide(current);
+
+      setInterval(() => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      }, 5000);
+    });
+  </script>
+
+</body>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+ .body{
+   line-height: 2.6;
+ }
+h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+
+  
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+   
+      font-size: 2rem;
+      color: #000e1c;
+      text-align: center;
+     font-weight: 800;
+    
+}
+
+.section-box {
+  margin-bottom: 60px; /* more spacing between boxes */
+}
+
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+
+    .section-box {
+      background: white;
+     line-height:1.5 ;
+      border-radius: 30px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(8, 8, 8, 0.08);
+      transition: transform 0.3s ease;
+      animation: scrollFade 1s ease-in-out both;
+    }
+
+    .section-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .core-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .value-box {
+      background-color: #e3f2fd;
+      border-left: 5px solid #1976d2;
+      padding: 20px;
+      border-radius: 10px;
+      animation: scrollZoom 1s ease forwards;
+    }
+
+    .profile-message {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      margin-bottom: 40px;
+      animation: scrollFade 1.2s ease-in-out both;
+    }
+
+    .profile-message img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0d1b2a;
+    }
+
+    .profile-message:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .gallery {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .slider {
+      position: relative;
+      width: 80%;
+      margin: auto;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      animation: scrollZoom 1s ease forwards;
+    }
+
+    .slides {
+      display: flex;
+      width: calc(100% * 8);
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .control {
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .lightbox img {
+      display: block;
+      margin: auto;
+      max-width: 80%;
+      max-height: 80%;
+      margin-top: 50px;
+    }
+
+    .lightbox:target {
+      display: block;
+    }
+
+    /* Scroll Animations */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-in-out;
+    }
+
+    .scroll-animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes scrollFade {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scrollZoom {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  <h2>Our Mission</h2>
+    <div class="section-box"data-aos="fade-up">
+      <p>To empower businesses through reliable, secure, and scalable technology solutions, driving growth and innovation with integrity and passion.</p>
+    </div>
+
+    <h2>Our Vision</h2>
+    <div class="section-box"data-aos="fade-up">
+      <p>To be a globally respected IT company known for transforming ideas into cutting-edge digital realities, while fostering long-term partnerships based on trust, value, and technological leadership.</p>
+    </div>
+
+    <h2>Our Core Values</h2>
+    <div class="core-values"data-aos="fade-up">
+      <div class="value-box"><strong>🔍 Integrity:</strong> Transparency, accountability, and doing the right thing—always.</div>
+      <div class="value-box"><strong>💡 Innovation:</strong> Thinking differently and staying ahead of technology trends.</div>
+      <div class="value-box"><strong>💼 Client-Centricity:</strong> Tailored solutions aligned with your business goals.</div>
+      <div class="value-box"><strong>🤝 Collaboration:</strong> Open communication and mutual respect.</div>
+      <div class="value-box"><strong>📈 Excellence:</strong> Delivering quality and exceeding expectations.</div>
+    </div>
+<style>
+
+  .director-section h2 {
+  text-align: center;
+  color: #0d47a1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.profile-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+ background: #f0fdff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-message:nth-child(even) {
+  flex-direction: row-reverse;
+  
+   background: #f5faff;
+}
+
+.profile-message img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+}
+
+.profile-message p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.profile-message strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+/* Keep existing styles above this */
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .profile-message {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-message img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  .profile-message p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .profile-message ul {
+    text-align: left;
+    padding-left: 20px;
+    display: inline-block;
+  }
+
+  .director-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+</style>
+<div class="director-section">
+  <h2>Director’s Message</h2>
+  <div class="profile-message">
+    <img src="https://i.ibb.co/ds3YTS2D/08d6e1f3-0fe6-4f6a-bff1-52406292633f-2.jpg" alt="Director">
+    <div>
+      <p>
+        <strong>P. Jayadeep Kumar, Director</strong>
+        As Director of P & J Technologies, I am proud to lead a team that believes in transforming ideas into impactful solutions. Our journey is rooted in a vision to deliver innovative, agile, and reliable IT services that help businesses stay ahead in a fast-evolving digital landscape.
+        <br><br>
+        <ul style="padding-left: 20px;">
+          <li>✅ Delivering excellence through custom-built software and IT consulting.</li>
+          <li>✅ Maintaining transparency and trust in every client relationship.</li>
+          <li>✅ Building a culture of continuous learning and forward thinking.</li>
+        </ul>
+        <br>
+        Together, we strive to be more than a service provider — we aim to be a long-term technology partner for every organization we work with.
+      </p>
+    </div>
+  </div>
+
+  
+  <div class="profile-message">
+     <img src="https://i.ibb.co/q3x2wbCr/PHOTO-2025-05-13-11-49-25.jpg" alt="Managing Director">
+    <div>
+     
+      
+        <p>
+        <strong>P. Pradeep Kumar, Managing Director</strong>
+        “Driving strategic innovation and sustainable growth is at the heart of what we do. We envision a future where technology enables progress for all.”
+      </p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+   <h2 id="Services" style="scroll-margin-top: 100px;" data-aos="fade-up">Our Services</h2>
+   
+ <style>
+  
+
+    @keyframes fadeInHeader {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+   
+
+    .services-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .service-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 0.6s ease-in-out;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-box h3 {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #0d1b2a;
+    }
+
+    .service-box p {
+      font-size: 1rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #1976d2;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+   
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+ 
+
+  <section class="services-container">
+    <div class="service-box">
+      <div class="icon"><i class="fas fa-laptop-code"></i></div>
+      <h3>Website Designing</h3>
+      <p>Modern, responsive, and user-friendly websites to make your brand stand out online.</p>
+    </div>
+
+    <div class="service-box">
+      <div class="icon"><i class="fas fa-pen-alt"></i></div>
+      <h3>Testing Exams</h3>
+      <p>Secure and scalable online exam solutions for academic and professional testing.</p>
+    </div>
+
+    <div class="service-box">
+      <div class="icon"><i class="fas fa-certificate"></i></div>
+      <h3>Certification Exams & Consultation</h3>
+      <p>Expert guidance for certification exams in various fields, ensuring your path to success.</p>
+    </div>
+
+    <div class="service-box">
+      <div class="icon"><i class="fas fa-network-wired"></i></div>
+      <h3>ERP Services</h3>
+      <p>Comprehensive ERP implementation and support to streamline your business operations.</p>
+    </div>
+
+    <div class="service-box">
+      <div class="icon"><i class="fas fa-bullhorn"></i></div>
+      <h3>Digital Marketing</h3>
+      <p>End-to-end digital marketing strategies to enhance your online visibility and reach.</p>
+    </div>
+  </section>
+  
+ <h2 id="contact"data-aos="fade-up" a href="#contact">Contact Us</h2>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+
+
+    .containercontact {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #000e1c;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 450px;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #005792;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-info li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .contact-info li i {
+      margin-right: 10px;
+      color: #005792;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #005792;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #003f66;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="containercontact">
+    
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 49-1-127, Eluru Rd, Gunadala, Vijayawada, AP 520004</li>
+          <li><i class="fas fa-phone"></i><a href="+91 8977787605" target="_blank"></a> +91 8977787605,<a href="+91 8977787606" target="_blank"></a> +91 8977787606</li>
+          <li><i class="fas fa-envelope"></i><a href="contact@pandjtechnologies.com" target="contact@pandjtechnologies.com"></a> contact@pandjtechnologies.com</li>
+          <li><i class="fab fa-linkedin"></i> <a href="" target="_blank">LinkedIn</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="#" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="send_mail.php" method="POST" onsubmit="return validateForm()">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      const name = document.querySelector('input[name="name"]').value.trim();
+      const email = document.querySelector('input[name="email"]').value.trim();
+      const message = document.querySelector('textarea[name="message"]').value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return false;
+      }
+      return true;
+    }
+  </script>
 </body>
 </html>
 
 
+
+<!-- Tailwind CDN (for quick use) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="..." data-aos="fade-up">
+
+<section class="bg-[#0D2550] text-white px-6 py-12">
+  <div class="max-w-xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4"style="color=white-space: inherit;">Let’s Talk</h2>
+    <p class="text-base md:text-lg leading-relaxed">
+      Every project starts with a chat. Joven leads our client conversations and will be happy to discuss your project.
+      He will also pull in the right people from the team when needed.
+    </p>
+    <a href="#contact" class="inline-block mt-6 bg-[#1FC177] text-white font-semibold text-base px-6 py-3 rounded-md shadow-md hover:bg-[#17a865] transition duration-300">
+      Tell us about your project
+    </a>
+  </div>
+</section>
+
+
+
+
+<!-- Button to open modal already exists -->
+
+<!-- Modal Popup Form -->
+<div id="projectModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:30px; border-radius:10px; width:90%; max-width:500px; position:relative;">
+    <button onclick="closeModal()" style="position:absolute; top:10px; right:15px; font-size:18px; border:none; background:none; cursor:pointer;">&times;</button>
+    <h2 style="margin-bottom:20px; color:#005792;">Tell us about your project</h2>
+    <form id="projectForm">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
+      <input type="tel" name="phone" placeholder="Contact Number" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
+      <textarea name="description" placeholder="Project Description" rows="4" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;"></textarea>
+      <button type="submit" style="margin-top:15px; background-color:#005792; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Open modal
+  document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('projectModal').style.display = 'flex';
+  });
+
+  // Close modal
+  function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+  }
+
+  // Handle form submit (optional: add validation or send via PHP/AJAX)
+  document.getElementById('projectForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Your project info has been submitted!');
+    closeModal();
+    this.reset();
+  });
+</script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Sidebar Toggle
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.querySelector('.hamburger');
+    function toggleSidebar() {
+      sidebar.classList.toggle('active');
+    }
+    window.addEventListener('click', (e) => {
+      if (
+        sidebar.classList.contains('active') &&
+        !sidebar.contains(e.target) &&
+        !hamburger.contains(e.target)
+      ) {
+        sidebar.classList.remove('active');
+      }
+    });
+
+    // ParticlesJS Config
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" }
+        },
+        "modes": {
+          "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+
+
+
+<body>
+                <iframe
+  src="https://www.google.com/maps?q=16.523925733184825,80.6726158192385&z=17&output=embed"
+  style="border:0; border-radius:10px;width: 100%;height: 350px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+<footer>
+  <div class="footer-container">
+
+    <!-- Let's Talk Section -->
+   
+
+    <!-- Main Footer Sections -->
+    <div class="footer-sections">
+
+      <!-- Company Info -->
+      <div class="footer-section">
+<h4>🗺️ Our Office</h4>
+        
+        <p>Gunadala Main Road<br>Opposite Vidyuth Soudha<br>Vijayawada,520004 <br> Andhra Pradesh 
+            <br>
+   
+      </div>
+      <div class="footer-section">
+  <h4>⚙️ Services</h4>
+      </div>
+    
+      <!-- Google Map -->   
+<div class="footer-section">
+        <h4>📧 Connect With Us</h4>
+        <ul>
+          <li><a href="mailto:contact@openai.in">Email Us</a></li>
+          <li><a href="https://linkedin.com/company/openai" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com/openai" target="_blank">Twitter</a></li>
+          <li><a href="https://instagram.com/openai" target="_blank">Instagram</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="mailto:contact@openai.in"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/company/openai" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/openai" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://instagram.com/openai" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>🔗 Quick Links</h4>
+        <ul>
+          <li><a href="#home">Dashboard</a></li>
+          <li><a href="#about">👤 About Us</a></li>
+          <li><a href="#services">⚙️ Services</a></li>
+          <li><a href="#contact">📧 Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect With Us -->
+      
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      &copy; 2025 P&J Technologies. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
