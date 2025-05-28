@@ -54,7 +54,7 @@
 
     .footer-section p, .footer-section a, .footer-section li {
       color: #ddd;
-      font-size: 1rem;
+      font-size: 16PX;
       
       line-height: 2.0;
     }
