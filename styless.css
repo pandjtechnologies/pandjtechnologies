@@ -1,4 +1,10 @@
 
+
+
+
+
+/* footer */
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -54,9 +60,9 @@
 
     .footer-section p, .footer-section a, .footer-section li {
       color: #ddd;
-      font-size: 16PX;
+      font-size: 18PX;
       
-      line-height: 2.0;
+      line-height: 3.0;
     }
 
     .footer-section a {
@@ -122,7 +128,7 @@
     border-top: 1px solid #ffffff22;
     text-align: center;
     padding-top: 20px;
-    font-size: 0.7rem;
+    
     color: #ccc;
 }
     }
