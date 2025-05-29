@@ -114,11 +114,10 @@
 
     .hamburger {
       display: none;
-      
+      font-size: 2em;
       color: white;
       cursor: pointer;
       z-index: 3;
-      font-size: 2.3em; 
     }
 
     .sidebar {
@@ -253,7 +252,7 @@
   .hero-content h1 {
     padding-top: 0;
    font-size: 2em;
-     margin-top: -160px; /* Try tuning this */
+     margin-top: -155px; /* Try tuning this */
   }
 }
     @media (max-width: 768px) {
@@ -262,13 +261,12 @@
         display: block;
         position: absolute;
         left: 20px;
-        font-size: 2.3em; 
       }
       header { justify-content: center; }
       .hero-content h1 { font-size: 3em; }
       .logo-area img { height: 36px; padding-left: 10px;}
       .logo-area span {
-        font-size: 2.3em;       
+        font-size: 1.8em;       
         color: white;
         font-weight: bold;
         font-family: noto serif display;
@@ -279,7 +277,7 @@
     .hero-content h1 {
         font-size: 2.8em;
         padding-top: 0px;
-        margin-top: -100px;
+        margin-top: -130px;
     }
 
      
@@ -317,7 +315,7 @@
         <a href="#home">Dashboard</a>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
-        <a href="#contact">Let's Talk</a>
+        <a href="#contact">Contact Us</a>
       </nav>
     </header>
 
@@ -387,6 +385,7 @@
       object-fit: cover;
       opacity: 0;
       transition: opacity 1s ease-in-out, transform 1s ease;
+      border-radius: 25px;
     }
 
     .pj-slide.active {
@@ -405,7 +404,7 @@
 </head>
 <body>
 
-  <h2 class="pj-about-heading"id="about">About Us</h2>
+  <h2 class="pj-about-heading"id="about"data-aos="fade-up">About Us</h2>
 
   <div class="pj-about-container">
     <div class="pj-about-text">
@@ -415,14 +414,14 @@
 
     <div class="pj-gallery">
       <div class="pj-slideshow">
-        <img class="pj-slide active" src="https://i.ibb.co/tp0KqJKs/p-4.png" alt="Slide 1">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=2" alt="Slide 2">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=3" alt="Slide 3">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=4" alt="Slide 4">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=5" alt="Slide 5">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=6" alt="Slide 6">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=7" alt="Slide 7">
-        <img class="pj-slide" src="https://source.unsplash.com/random/800x600?sig=8" alt="Slide 8">
+        <img class="pj-slide active" src="https://i.ibb.co/DPSd0CgD/WORKSTATIONS.jpg" alt="Slide 1">
+        <img class="pj-slide" src="https://i.ibb.co/BVsrbgRV/ADMINISTRATION-ENTRANCE-VIEW.jpg" alt="Slide 2">
+        <img class="pj-slide" src="https://i.ibb.co/PGXQY5RT/WORKSTATION.jpg" alt="Slide 3">
+        <img class="pj-slide" src="https://i.ibb.co/DPSd0CgD/WORKSTATIONS.jpg" alt="Slide 4">
+        <img class="pj-slide" src="https://i.ibb.co/BVsrbgRV/ADMINISTRATION-ENTRANCE-VIEW.jpg" alt="Slide 5">
+        <img class="pj-slide" src="https://i.ibb.co/PGXQY5RT/WORKSTATION.jpg" alt="Slide 6">
+        <img class="pj-slide" src="https://i.ibb.co/BVsrbgRV/ADMINISTRATION-ENTRANCE-VIEW.jpg" alt="Slide 7">
+        <img class="pj-slide" src="https://i.ibb.co/DPSd0CgD/WORKSTATIONS.jpg" alt="Slide 8">
       </div>
     </div>
   </div>
@@ -651,17 +650,17 @@ h2 {
       to { opacity: 1; transform: scale(1); }
     }
   </style>
-  <h2>Our Mission</h2>
-    <div class="section-box"data-aos="fade-up">
+  <h2 data-aos="fade-up">Our Mission</h2>
+    <div class="section-box"data-aos="fade-up" >
       <p>To empower businesses through reliable, secure, and scalable technology solutions, driving growth and innovation with integrity and passion.</p>
     </div>
 
-    <h2>Our Vision</h2>
+    <h2 data-aos="fade-up">Our Vision</h2>
     <div class="section-box"data-aos="fade-up">
       <p>To be a globally respected IT company known for transforming ideas into cutting-edge digital realities, while fostering long-term partnerships based on trust, value, and technological leadership.</p>
     </div>
 
-    <h2>Our Core Values</h2>
+    <h2 data-aos="fade-up">Our Core Values</h2>
     <div class="core-values"data-aos="fade-up">
       <div class="value-box"><strong>🔍 Integrity:</strong> Transparency, accountability, and doing the right thing—always.</div>
       <div class="value-box"><strong>💡 Innovation:</strong> Thinking differently and staying ahead of technology trends.</div>
@@ -791,7 +790,7 @@ h2 {
 
 </body>
 
-   <h2 id="Services" style="scroll-margin-top: 100px;" data-aos="fade-up">Our Services</h2>
+   <h2 style="scroll-margin-top: 100px;" data-aos="fade-up">Our Services</h2>
    
  <style>
   
@@ -862,7 +861,7 @@ h2 {
 
  
 
-  <section class="services-container" id="services">
+  <section class="services-container"id="services">
     <div class="service-box">
       <div class="icon"><i class="fas fa-laptop-code"></i></div>
       <h3>Website Designing</h3>
@@ -894,7 +893,7 @@ h2 {
     </div>
   </section>
   
- <h2 id="contact"data-aos="fade-up" a href="#contact">Contact Us</h2>
+ <h2 data-aos="fade-up" a href="#contact" >Contact Us</h2>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
@@ -1194,10 +1193,10 @@ h2 {
       <div class="footer-section">
   <h4>⚙️ Services</h4>
     <ul>
-          <li><a href="#services"id="services">● &nbsp; Website Designing</a></li>
-          <li><a href="#services"id="services">● &nbsp;Testing Exams</a></li>
-          <li><a href="#services"id="services">● &nbsp;Digital Marketing</a></li>
-          <li><a href="#services"id="services">● &nbsp;ERP Services</a></li>
+          <li><a href="#services">● &nbsp; Website Designing</a></li>
+          <li><a href="#services">● &nbsp;Testing Exams</a></li>
+          <li><a href="#services">● &nbsp;Digital Marketing</a></li>
+          <li><a href="#services">● &nbsp;ERP Services</a></li>
         </ul>
       </div>
     
