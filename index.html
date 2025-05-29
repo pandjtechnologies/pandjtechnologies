@@ -7,7 +7,7 @@
   <title>P&J Technologies</title>
   <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
   <link rel="stylesheet" href="styless.css">
-<form action="send_mail.php" method="POST" onsubmit="return validateForm()">
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Playfair+Display:wght@700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -286,7 +286,7 @@
       }
       .hero-content h2 {
         font-size: 1.5em;
-        margin-top: 50px;
+        margin-top: 30px;
       }
       .hero-text {
   animation: fadeInUp 1s ease-in-out;
@@ -316,6 +316,7 @@
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact Us</a>
+
       </nav>
     </header>
 
@@ -324,7 +325,9 @@
       <a href="#home" onclick="toggleSidebar()">🏠 Dashboard</a>
       <a href="#about" onclick="toggleSidebar()">👤 About Us</a>
       <a href="#services" onclick="toggleSidebar()">⚙️ Our Services</a>
-      <a href="#contact" onclick="toggleSidebar()">📧 Contact Us</a>
+      
+<a href="#contact" onclick="toggleSidebar(); return true;">📧 Contact Us</a>
+
     </div>
 
     <div class="hero-content" data-aos="fade-up">
@@ -754,7 +757,7 @@ h2 {
   }
 }
 </style>
-<div class="director-section">
+<div class="director-section"data-aos="fade-up">
   <h2>Director’s Message</h2>
   <div class="profile-message">
     <img src="https://i.ibb.co/ds3YTS2D/08d6e1f3-0fe6-4f6a-bff1-52406292633f-2.jpg" alt="Director">
@@ -863,205 +866,254 @@ h2 {
  
 
   <section class="services-container"id="services">
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up">
       <div class="icon"><i class="fas fa-laptop-code"></i></div>
       <h3>Website Designing</h3>
       <p>Modern, responsive, and user-friendly websites to make your brand stand out online.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up">
       <div class="icon"><i class="fas fa-pen-alt"></i></div>
       <h3>Testing Exams</h3>
       <p>Secure and scalable online exam solutions for academic and professional testing.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box"data-aos="fade-up">
       <div class="icon"><i class="fas fa-certificate"></i></div>
       <h3>Certification Exams & Consultation</h3>
       <p>Expert guidance for certification exams in various fields, ensuring your path to success.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box"data-aos="fade-up">
       <div class="icon"><i class="fas fa-network-wired"></i></div>
       <h3>ERP Services</h3>
       <p>Comprehensive ERP implementation and support to streamline your business operations.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box"data-aos="fade-up">
       <div class="icon"><i class="fas fa-bullhorn"></i></div>
       <h3>Digital Marketing</h3>
       <p>End-to-end digital marketing strategies to enhance your online visibility and reach.</p>
     </div>
   </section>
   
- <h2 data-aos="fade-up" a href="#contact" >Contact Us</h2>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
-
-    .containercontact {
-      max-width: 1100px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: #000e1c;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .contact-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-info, .contact-form {
-      flex: 1 1 450px;
-    }
-
-    .contact-info h2, .contact-form h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #005792;
-    }
-
-    .contact-info ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .contact-info li {
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-    }
-
-    .contact-info li i {
-      margin-right: 10px;
-      color: #005792;
-    }
-
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .contact-form input, .contact-form textarea {
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    .contact-form button {
-      background-color: #005792;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .contact-form button:hover {
-      background-color: #003f66;
-    }
-    .font-bold {
-    font-weight: 700;
-    color: aliceblue;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
 }
 
-
-    @media (max-width: 768px) {
-      .contact-wrapper {
-        flex-direction: column;
-      }
-          .contact-info, .contact-form {
-    flex: 1 1 335px;
-}
-      .contact-info li {
-  
-    font-size: 0.9rem;
+.pj-contact-section {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+  position: relative;
+  overflow: hidden;
 }
 
-    }
+.pj-contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
 
+.pj-contact-details, .pj-contact-form {
+  flex: 1 1 350px;
+}
+
+.pj-contact-details h2, .pj-contact-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003e80;
+}
+
+.pj-contact-details p, .pj-contact-details a {
+  margin: 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.pj-contact-details i {
+  margin-right: 10px;
+  color: #0072ff;
+}
+
+.pj-contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pj-contact-form input,
+.pj-contact-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.pj-contact-form input:focus,
+.pj-contact-form textarea:focus {
+  border-color: #0072ff;
+  outline: none;
+  box-shadow: 0 0 5px #0072ff44;
+}
+
+.pj-contact-form button {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.pj-contact-form button:hover {
+  transform: scale(1.05);
+}
+
+.pj-animate-slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: pj-slide-in 1s forwards ease-out;
+}
+
+@keyframes pj-slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .pj-contact-container {
+    flex-direction: column !important;
+  }
+
+  .pj-contact-details {
+    order: 1 !important;
+    margin-bottom: 30px;
+  }
+
+  .pj-contact-form {
+    order: 2 !important;
+  }
+
+  .pj-contact-details,
+  .pj-contact-form {
+    flex: 1;
+    min-width: 0;
+  }
+}
 </style>
-</head>
-<body>
-  <div class="containercontact">
-    
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <h2>Get In Touch</h2>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> 49-1-127, Eluru Rd, Gunadala, Vijayawada, AP 520004</li>
-          <li><i class="fas fa-phone"></i> 
-  <a href="tel:+918977787605">+91 8977787605</a>,
-  <a href="tel:+918977787606">+91 8977787606</a>
-</li>
-
-<li><i class="fas fa-envelope"></i> 
-  <a href="mailto:pandjtechnologies@gmail.com">pandjtechnologies@gmail.com</a>
-</li>
-
-          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/pandj-technologies-835796368/" target="_blank">LinkedIn</a></li>
-          <li><i class="fab fa-instagram"></i> <a href="#" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="contact-form">
-        <h2>Send Us a Message</h2>
-        <form action="send_mail.php" method="POST" onsubmit="return validateForm()">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-           <div class="g-recaptcha" data-sitekey="6LcN2E0rAAAAAPAreJMDgs65xSUxYCtkfWwKCR3V
-"></div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+<h2 style="scroll-margin-top: 100px;" data-aos="fade-up">Contact US</h2>
+<section id="contact" class="pj-contact-section">
+  <div class="pj-contact-container">
+    <div class="pj-contact-details pj-animate-slide-in">
+      <h2>📍 Get In Touch</h2>
+      <p><strong>Address:</strong><br>49-1-127, Eluru Rd, Gunadala, Vijayawada, AP 520004</p>
+      <p><strong>Phone:</strong><br>+91 8977787605, +91 8977787606</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:contact@pandjtechnologies.com">contact@pandjtechnologies.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://instagram.com" target="_blank">Instagram</a></p>
     </div>
+
+  <div class="pj-contact-form pj-animate-slide-in">
+  <h2>✉️ Send Us a Message</h2>
+  <form action="https://api.web3forms.com/submit" method="POST" id="pj-contactForm">
+    <!-- Replace with your actual Web3Forms access key -->
+    <input type="hidden" name="access_key" value="b4852e31-290e-45c9-9e4d-43455da95d2c" />
+
+    <input type="text" name="name" id="pj-name" placeholder="Your Name" required />
+    <input type="email" name="email" id="pj-email" placeholder="Your Email" required />
+    <textarea name="message" id="pj-message" placeholder="Your Message" required></textarea>
+
+    <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+  </form>
+</div>
+
   </div>
+</section>
 
-  <script>
-    function validateForm() {
-      const name = document.querySelector('input[name="name"]').value.trim();
-      const email = document.querySelector('input[name="email"]').value.trim();
-      const message = document.querySelector('textarea[name="message"]').value.trim();
+<script>
+document.getElementById("pj-contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-      if (!name || !email || !message) {
-        alert("Please fill out all fields.");
-        return false;
-      }
-      return true;
-    }
-  </script>
+  const name = document.getElementById("pj-name");
+  const email = document.getElementById("pj-email");
+  const message = document.getElementById("pj-message");
+
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  [name, email, message].forEach(field => field.style.borderColor = "#ccc");
+
+  if (name.value.trim() === "") {
+    alert("Please enter your name.");
+    name.style.borderColor = "red";
+    name.focus();
+    return;
+  }
+
+  if (!emailPattern.test(email.value.trim())) {
+    alert("Please enter a valid email address.");
+    email.style.borderColor = "red";
+    email.focus();
+    return;
+  }
+
+  if (message.value.trim() === "") {
+    alert("Please enter your message.");
+    message.style.borderColor = "red";
+    message.focus();
+    return;
+  }
+
+  alert("Message sent successfully!");
+  document.getElementById("pj-contactForm").reset();
+});
+</script>
+
+
 </body>
 </html>
 
 
-
+<style>
+  .font-bold {
+    font-weight: 700;
+    color: aliceblue;
+}
+</style>
 <!-- Tailwind CDN (for quick use) -->
 <script src="https://cdn.tailwindcss.com"></script>
 <div class="..." data-aos="fade-up">
 
 <section class="bg-[#0D2550] text-white px-6 py-12">
   <div class="max-w-xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4"style="color=white-space: inherit;">Let’s Talk</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 "style="color=white-space: color: aliceblue;">Let’s Talk</h2>
     <p class="text-base md:text-lg leading-relaxed">
       Every project starts with a chat. Jayadeep Kumar leads our client conversations and will be happy to discuss your project.
       He will also pull in the right people from the team when needed.
     </p>
-    <a href="#contact" class="inline-block mt-6 bg-[#1FC177] text-white font-semibold text-base px-6 py-3 rounded-md shadow-md hover:bg-[#17a865] transition duration-300">
+    <a href="mailto:jayadeep@pandjtechnologies.com" class="inline-block mt-6 bg-[#1FC177] text-white font-semibold text-base px-6 py-3 rounded-md shadow-md hover:bg-[#17a865] transition duration-300">
       Tell us about your project
     </a>
   </div>
@@ -1087,26 +1139,7 @@ h2 {
   </div>
 </div>
 
-<script>
-  // Open modal
-  document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.getElementById('projectModal').style.display = 'flex';
-  });
 
-  // Close modal
-  function closeModal() {
-    document.getElementById('projectModal').style.display = 'none';
-  }
-
-  // Handle form submit (optional: add validation or send via PHP/AJAX)
-  document.getElementById('projectForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Your project info has been submitted!');
-    closeModal();
-    this.reset();
-  });
-</script>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
