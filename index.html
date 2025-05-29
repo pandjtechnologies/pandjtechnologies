@@ -62,15 +62,35 @@
 
     .logo-area img {
       height: 60px;
+       filter: drop-shadow(0 0 1px white);
     }
 
     .logo-area span {
+      
       font-size: 2.5em;
       color: white;
       font-weight: bold;
       font-family: noto serif display;
       font-style: italic;
+
+         
+      line-height: 1.1;
+      color: white;
+      background: linear-gradient(90deg, #fff 0%, #6999b0 40%, #ebe8e8 80%);
+    background-size: 200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 5s infinite linear;
     }
+
+    @keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
 
     nav {
       display: flex;
@@ -82,6 +102,12 @@
       text-decoration: none;
       font-size: 1.1em;
       font-weight: bold;
+        color: white;
+      background: linear-gradient(90deg, #fff 0%, #6999b0 40%, #ebe8e8 80%);
+    background-size: 200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 5s infinite linear;
     }
 
     nav a:hover { color: #00e1ff; }
@@ -116,6 +142,7 @@
 
     .sidebar a {
       color: white;
+
       text-decoration: none;
       font-size: 1.1em;
       display: flex;
@@ -123,6 +150,11 @@
       position: relative;
       padding-left: 20px;
       transition: color 0.3s ease;
+      background: linear-gradient(90deg, #fff 0%, #6999b0 40%, #b7b5b5 80%);
+    background-size: 200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 8s infinite linear;
     }
 
     .sidebar a::before {
@@ -168,11 +200,17 @@
 
     .hero-content h1 {
       font-family: 'Montserrat', sans-serif;
+      
       font-size: 4em;
       font-weight: 300;
       text-transform: uppercase;
       line-height: 1.1;
       color: white;
+      background: linear-gradient(90deg, #fff 0%, #6999b0 40%, #b7b5b5 80%);
+    background-size: 200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 5s infinite linear;
     }
 
     .hero-content h1 span.purple {
@@ -210,7 +248,13 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-
+@media (max-width: 768px) {
+  .hero-content h1 {
+    padding-top: 0;
+   font-size: 2em;
+     margin-top: -55px; /* Try tuning this */
+  }
+}
     @media (max-width: 768px) {
       nav { display: none; }
       .hamburger {
@@ -220,24 +264,25 @@
       }
       header { justify-content: center; }
       .hero-content h1 { font-size: 3em; }
-      .logo-area img { height: 36px; }
+      .logo-area img { height: 36px; padding-left: 10px;}
       .logo-area span {
-        font-size: 1.5em;
+        font-size: 1.8em;       
         color: white;
         font-weight: bold;
         font-family: noto serif display;
         font-style: italic;
       }
       .hero-content h1 {
-        font-size: 2.0em;
+        font-size:1.8em;
       padding-top: 10px;
+      margin-top: -65px;
       }
       .hero {
         height: 100vh;
       }
       .hero-content h2 {
         font-size: 1.0em;
-        margin-top: 10px;
+        margin-top: 30px;
       }
       .hero-text {
   animation: fadeInUp 1s ease-in-out;
@@ -275,7 +320,7 @@
       <a href="#home" onclick="toggleSidebar()">🏠 Dashboard</a>
       <a href="#about" onclick="toggleSidebar()">👤 About Us</a>
       <a href="#services" onclick="toggleSidebar()">⚙️ Our Services</a>
-      <a href="#contact" onclick="toggleSidebar()">📞 Let's Talk</a>
+      <a href="#contact" onclick="toggleSidebar()">📧 Contact Us</a>
     </div>
 
     <div class="hero-content" data-aos="fade-up">
@@ -934,12 +979,17 @@ h2 {
       .contact-wrapper {
         flex-direction: column;
       }
+          .contact-info, .contact-form {
+    flex: 1 1 335px;
+}
       .contact-info li {
   
     font-size: 0.9rem;
 }
+
     }
-  </style>
+
+</style>
 </head>
 <body>
   <div class="containercontact">
