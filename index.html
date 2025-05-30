@@ -331,9 +331,10 @@
     </div>
 
     <div class="hero-content" data-aos="fade-up">
-      <h1>Innovative Solution <br>For Your<span class="purple">&nbsp;</span>Business</h1>
+      <h1>Innovative Solution For Your Business</h1>
       <h2 data-aos="fade-up" data-aos-delay="300">Empowering businesses with next-generation technology and transformation.</h2>
     </div>
+    
   </div>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -934,7 +935,7 @@ body {
 }
 
 .pj-contact-details h2, .pj-contact-form h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #003e80;
 }
@@ -1035,12 +1036,14 @@ body {
       <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
       <p><i class="fab fa-instagram"></i> <a href="https://instagram.com" target="_blank">Instagram</a></p>
     </div>
-
-  <div class="pj-contact-form pj-animate-slide-in">
+    
+<div class="pj-contact-form pj-animate-slide-in">
   <h2>✉️ Send Us a Message</h2>
-  <form action="https://api.web3forms.com/submit" method="POST" id="pj-contactForm">
-    <!-- Replace with your actual Web3Forms access key -->
+
+  <form id="pj-contactForm">
     <input type="hidden" name="access_key" value="b4852e31-290e-45c9-9e4d-43455da95d2c" />
+    <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html" />
+    <input type="hidden" name="from_name" value="Website Contact" />
 
     <input type="text" name="name" id="pj-name" placeholder="Your Name" required />
     <input type="email" name="email" id="pj-email" placeholder="Your Email" required />
@@ -1049,6 +1052,34 @@ body {
     <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
   </form>
 </div>
+
+<script>
+  const form = document.getElementById('pj-contactForm');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      } else {
+        alert("❌ Failed: " + result.message);
+      }
+    } catch (error) {
+      alert("❌ Error occurred: " + error.message);
+    }
+  });
+</script>
+
 
   </div>
 </section>
@@ -1126,17 +1157,7 @@ document.getElementById("pj-contactForm").addEventListener("submit", function (e
 
 <!-- Modal Popup Form -->
 <div id="projectModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); z-index:9999; justify-content:center; align-items:center;">
-  <div style="background:#fff; padding:30px; border-radius:10px; width:90%; max-width:500px; position:relative;">
-    <button onclick="closeModal()" style="position:absolute; top:10px; right:15px; font-size:18px; border:none; background:none; cursor:pointer;">&times;</button>
-    <h2 style="margin-bottom:20px; color:#005792;">Tell us about your project</h2>
-    <form id="projectForm">
-      <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
-      <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
-      <input type="tel" name="phone" placeholder="Contact Number" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
-      <textarea name="description" placeholder="Project Description" rows="4" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;"></textarea>
-      <button type="submit" style="margin-top:15px; background-color:#005792; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Submit</button>
-    </form>
-  </div>
+  
 </div>
 
 
