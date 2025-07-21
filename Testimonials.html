@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Page Title</title>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body>
+
+  <!-- Include this header content directly or use a server include if possible -->
+  <!-- Either paste navbar.html content here, or use a partial system (PHP, React, etc.) -->
+  <div id="navbar">
+   
+    <!-- navbar.html -->
+<header class="pj-header">
+  <div class="pj-nav-container">
+    <div class="pj-logo-wrapper">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" />
+      <div class="pj-text-container">
+        <span class="company-name">
+         P <span class="ampersand">&</span> J Technologies
+        </span>
+        <span class="pj-tagline">Proctoring. Justice. Innovation.</span>
+      </div>
+    </div>
+
+    <nav class="pj-nav">
+      <ul>
+        <li id="pj-dropdown-who">
+          <a href="javascript:void(0);" tabindex="0">Who Are We <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-who">
+         <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+          </div>
+        </li>
+        <li id="pj-dropdown-services">
+          <a href="javascript:void(0);" tabindex="0">Services <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-services">
+             <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="pj-hamburger" id="pj-hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="pj-mobile-nav" id="pj-mobile-menu">
+    <div class="pj-mobile-toggle" id="pj-mobile-who-toggle">
+      <span>Who Are We</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-who-menu">
+    <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+
+    </div>
+
+    <div class="pj-mobile-toggle" id="pj-mobile-services-toggle">
+      <span>Services</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-services-menu">
+       <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+    </div>
+
+    <a href="services.html">What We Do</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="faq.html">FAQs</a>
+    <a href="careers.html">Careers</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contactus">Contact</a>
+  </div>
+</header>
+
+  </div>
+  <script src="navbar.js"></script>
+
+  <div id="pageLoader">
+    <div class="loader-wrapper">
+      <div class="loader-ring-container">
+        <div class="loader-ring"></div>
+        <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="P & J Logo" class="loader-logo">
+      </div>
+      <div class="loader-text">P & J Technologies</div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+ 
+
+  <!-- Script to remove loader -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+ <script src="script.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.faq-header-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-header-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.faq-header-text p {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.faq-header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-header-image img {
+  max-width: 300px;
+  width: 100%;
+ 
+  
+  padding: 10px;
+ 
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-header {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .faq-header-text h1 {
+    font-size: 36px;
+  }
+
+  .faq-header-image img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
+
+  </style>
+
+  <!-- Testimonials Section Header -->
+<!-- AOS stylesheet (in <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<div class="faq-header" data-aos="fade-up">
+  <div class="faq-header-text">
+    <h1>Testimonials</h1>
+    <p>Explore our work – projects that speak for themselves..</p>
+  </div>
+  <div class="faq-header-image">
+    <img src="https://i.ibb.co/Myq7L5P6/reviews-concept-landing-page.png" alt="FAQ illustration" />
+  </div>
+</div>
+
+<!-- AOS script (before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fb;
+      color: #003366;
+    }
+    .testimonial-section {
+      padding: 80px 20px;
+    }
+    .testimonial-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .testimonial-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .testimonial-header p {
+      font-size: 1rem;
+      color: #444;
+    }
+    .testimonial-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .testimonial-item {
+      background: white;
+      border-left: 6px solid #003366;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      padding: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .testimonial-logo img {
+      width: 80px;
+      height: auto;
+      object-fit: contain;
+    }
+    .testimonial-content {
+      flex: 1;
+    }
+    .testimonial-content h3 {
+      font-size: 1.25rem;
+      margin: 0 0 5px;
+    }
+    .testimonial-content .stars {
+      color: #f4b400;
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+    .testimonial-content blockquote {
+      font-style: italic;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .client {
+      font-weight: 600;
+    }
+    .client span {
+      font-weight: 400;
+      color: #666;
+      margin-left: 5px;
+    }
+    .case-study-content {
+      display: none;
+      padding-top: 20px;
+      color: #222;
+    }
+    .case-study-content h4 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .case-study-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 20px;
+      background-color: #0077cc;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+    .case-study-btn:hover {
+      background-color: #005fa3;
+    }
+    @media (max-width: 768px) {
+      .testimonial-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .testimonial-logo img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+<section class="testimonial-section" id="testimonials">
+  <div class="testimonial-header" data-aos="zoom-in">
+    <h2>What Our Clients Say</h2>
+    <p>Real feedback and success stories from our trusted partners.</p>
+  </div>
+
+  <div class="testimonial-container">
+    <!-- Akhil Travels -->
+    <div class="testimonial-item" data-aos="fade-up">
+      <div class="testimonial-logo">
+        <img src="https://i.ibb.co/0pY2XHpT/akhil-logo-hd-upscaled.png" alt="Akhil Logo">
+      </div>
+      <div class="testimonial-content">
+        <h3>Akhil Travels</h3>
+        <p class="stars">★★★★★</p>
+        <blockquote>"P and J Technologies built our travel website with great attention to user experience, speed, and mobile usability. We’re already seeing more customer inquiries and smoother bookings!"</blockquote>
+        <p class="client">Bhupathi Raju <span>— Owner, Akhil Travels</span></p>
+        <a class="case-study-btn">View Case Study</a>
+        <div class="case-study-content">
+          <h4>Client Overview</h4>
+          <p>Akhil Travels provides car rental and tour planning services. They wanted a modern booking platform.</p>
+          <h4>Challenge</h4>
+          <p>They lacked a mobile-optimized platform, leading to lost leads and poor SEO.</p>
+          <h4>Our Solution</h4>
+          <p>We created a custom website with booking integration, WhatsApp chat, and responsive layout.</p>
+          <h4>Implementation</h4>
+          <p>Delivered in under 2 weeks with mobile-first approach, SEO optimization, and real-time inquiry forms.</p>
+          <h4>Result</h4>
+          <p>40% increase in booking inquiries, higher customer satisfaction, and faster response times.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trinadh Tours -->
+    <div class="testimonial-item" data-aos="fade-up">
+      <div class="testimonial-logo">
+        <img src="https://i.ibb.co/crQGmf7/1-modified.png" alt="Trinadh Logo">
+      </div>
+      <div class="testimonial-content">
+        <h3>Trinadh Tours and Travels</h3>
+        <p class="stars">★★★★★</p>
+        <blockquote>"From itinerary design to vendor integration, their work was efficient and professional. They also delivered detailed admin dashboards and integrated WhatsApp support for customers."</blockquote>
+        <p class="client">Trinadh <span>— Founder</span></p>
+        <a class="case-study-btn">View Case Study</a>
+        <div class="case-study-content">
+          <h4>Client Overview</h4>
+          <p>Trinadh Tours offers domestic tour packages and holiday planning services.</p>
+          <h4>Challenge</h4>
+          <p>Needed automated itinerary system and direct communication support via WhatsApp.</p>
+          <h4>Our Solution</h4>
+          <p>Designed dynamic admin panel, lead forms, and itinerary generator with media support.</p>
+          <h4>Implementation</h4>
+          <p>Custom admin dashboard built using HTML, Firebase, and lightweight backend APIs.</p>
+          <h4>Result</h4>
+          <p>Streamlined operations and improved client response time. 30% reduction in manual follow-up calls.</p>
+        </div>
+      </div>
+    </div>
+<!-- Existing content remains unchanged -->
+
+<!-- PSI Exam Partner -->
+<div class="testimonial-item" data-aos="fade-up">
+  <div class="testimonial-logo">
+    <img src="https://i.ibb.co/bMN71yK6/psi-logo.jpg" alt="PSI Logo">
+  </div>
+  <div class="testimonial-content">
+    <h3>PSI Exam Partner</h3>
+    <p class="stars">★★★★☆</p>
+    <blockquote>"We’re excited to be an authorized PSI exam delivery center. Our infrastructure is fully ready, and we're committed to offering secure, seamless candidate experiences."</blockquote>
+    <p class="client">Exam Coordinator <span>— P and J Technologies</span></p>
+    <a class="case-study-btn">View Case Study</a>
+    <div class="case-study-content">
+      <h4>Client Overview</h4>
+      <p>PSI is a global leader in assessment services, offering certification and licensure exams.</p>
+      <h4>Challenge</h4>
+      <p>Needed a secure, high-standard test delivery environment in a regional location.</p>
+      <h4>Our Solution</h4>
+      <p>Established a certified exam center with biometric check-in, surveillance, and PSI guidelines.</p>
+      <h4>Implementation</h4>
+      <p>Deployed secured infrastructure with PSI software installation and weekly audit compliance.</p>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Meazure Learning -->
+<div class="testimonial-item" data-aos="fade-up">
+  <div class="testimonial-logo">
+    <img src="https://i.ibb.co/40DpQvr/MEASURE-LEARNING.png" alt="Meazure Learning Logo">
+  </div>
+  <div class="testimonial-content">
+    <h3>Meazure Learning</h3>
+    <p class="stars">★★★★☆</p>
+    <blockquote>"As an approved Meazure Learning center, we are prepared to facilitate technical certification exams with top-tier reliability and speed."</blockquote>
+    <p class="client">Test Delivery Manager <span>— P and J Technologies</span></p>
+    <a class="case-study-btn">View Case Study</a>
+    <div class="case-study-content">
+      <h4>Client Overview</h4>
+      <p>Meazure Learning delivers professional certification exams for technical and academic sectors.</p>
+      <h4>Challenge</h4>
+      <p>Required infrastructure setup to match US testing standards within tight onboarding timelines.</p>
+      <h4>Our Solution</h4>
+      <p>Provided a fully equipped test room, dual-screen systems, secure internet lines, and backup support.</p>
+      <h4>Implementation</h4>
+      <p>Completed environment testing, dry runs, and approved hardware setup within 1 week.</p>
+    
+    </div>
+  </div>
+</div>
+
+<!-- Internal Logistics -->
+<div class="testimonial-item" data-aos="fade-up">
+  <div class="testimonial-logo">
+    <img src="https://sriveeravivekaagrofarms.com/wp-content/uploads/2016/11/home-logo.png" alt="Logistics Logo">
+  </div>
+  <div class="testimonial-content">
+    <h3>Internal Logistics App</h3>
+    <p class="stars">★★★★☆</p>
+    <blockquote>"The internal dashboard for logistics helped us manage deliveries with real-time tracking and better route planning. A well-built tool!"</blockquote>
+    <p class="client">Gudiseva Vidya <span>— Managing Director</span></p>
+    <a class="case-study-btn">View Case Study</a>
+    <div class="case-study-content">
+      <h4>Client Overview</h4>
+      <p>A growing logistics firm needed a real-time dispatch and delivery system with route planning.</p>
+      <h4>Challenge</h4>
+      <p>Manual entry and tracking led to inefficiencies and delivery delays.</p>
+      <h4>Our Solution</h4>
+      <p>Developed an internal dashboard with GPS API integration and delivery timeline management.</p>
+      <h4>Implementation</h4>
+      <p>Created web-based platform with login access, route suggestions, delivery KPIs, and analytics.</p>
+      <h4>Result</h4>
+      <p>Improved dispatch accuracy by 50%, reduced delivery times, and enhanced operational insights.</p>
+   
+    </div>
+  </div>
+</div>
+<!-- Existing testimonial items remain unchanged above -->
+
+<!-- Final CTA Section -->
+<section class="cta-highlight" data-aos="zoom-in">
+  <div class="cta-wrapper">
+    <h2>🚀 Inspired by these stories?</h2>
+    <p>Let’s build something amazing together. Whether it's a product idea, platform upgrade, or digital transformation — we’re ready to help.</p>
+    <a href="contactus.html" class="cta-btn">Start a Conversation</a>
+  </div>
+</section>
+
+<style>
+  .cta-highlight {
+    background: linear-gradient(145deg, #003366, #00509e);
+    color: white;
+    padding: 80px 20px;
+    margin-top: 60px;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .cta-wrapper h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  .cta-wrapper p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: #f4b400;
+    color: #003366;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    background: #ffd700;
+  }
+
+  @media (max-width: 768px) {
+    .cta-wrapper h2 {
+      font-size: 2rem;
+    }
+    .cta-wrapper p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+    <!-- Add more testimonials similarly -->
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".case-study-btn");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        const content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          this.innerText = "View Case Study";
+        } else {
+          content.style.display = "block";
+          this.innerText = "Hide Case Study";
+        }
+      });
+    });
+  });
+</script>
+</body>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Chat panel -->
+<!-- Chat toggle button -->
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="pj-footer.css">
+
+<body>
+
+<!-- Chat toggle button -->
+<div class="chat-toggle" onclick="toggleChat()">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chat Icon">
+</div>
+
+<!-- Chat panel -->
+<div class="chat-panel" id="chatPanel" style="display:none;">
+  <div class="chat-header">
+    Send Us a Message
+    <span class="close" onclick="toggleChat()">×</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="input-area">
+    <input type="text" id="chatInput" placeholder="Your answer..." autocomplete="off" />
+    <button id="sendBtn" disabled>Next</button>
+  </div>
+</div>
+
+<!-- Success toast -->
+<div class="toast" id="successToast" style="display:none;">✅ Thank you! We will connect you shortly.</div>
+
+<!-- Footer HTML -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-col">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" class="footer-logo">
+      <h2>P & J Technologies</h2>
+      <div class="footer-tagline">PROCTORING. JUSTICE. INNOVATION.</div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-user"></i> About Us</a></li>
+        <li><a href="Faq.html"><i class="fas fa-users"></i> FAQs</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="carrers.html"><i class="fas fa-users"></i> Careers</a></li>
+        <li><a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="policies.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        <li><a href="policies.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      <ul>
+         <li><a href="services.html#authorized"><i class="fas fa-check-circle"></i>Authorised Test Center</a></li>
+        <li><a href="services.html#web"><i class="fas fa-desktop"></i> Web Development</a></li>
+        <li><a href="services.html#app"><i class="fas fa-desktop"></i> Mobile App Development</a></li>
+        <li><a href="services.html#marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+         
+        <li><a href="services.html#erp"><i class="fas fa-network-wired"></i> ERP Services</a></li>
+          <li><a href="services.html#consulting"><i class="fas fa-network-wired"></i> IT Consulting & Business Solutions</a></li>
+          <li><a href="services.html#othermarketing"><i class="fas fa-network-wired"></i> Marketing & Co-Working Spaces</a></li>
+     
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 49-1-127, 2nd Floor,<br>Opp. Vidyuth Soudha<br> Vijayawada – 520004</p>
+      <p><i class="fas fa-phone"></i> Phone (General): <a href="tel:+918977787605">+91 8977787605</a></p>
+      <p><i class="fas fa-headset"></i> Phone (Support): <a href="tel:+918977787606">+91 8977787606</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@pandjtechnologies.com"><span style="font-size: 13px;">contact@pandjtechnologies.com</span></a></p>
+    </div>
+
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-bottom">
+    <h3>Follow Us</h3>
+     <div class="social-icons">
+      <a href="https://www.facebook.com/share/1BnU7jcy78/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/pandjtech1437"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/pandj-technologies-835796368/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/technologiespj/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Newsletter Form -->
+    <div class="newsletter">
+      <p>Subscribe to our newsletter:</p>
+      <form id="subscribeForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5b9ec738-33ed-438c-9a7f-de11e2251a36">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="success-message" id="successMessage" style="display:none;">
+        ✅ Thank you for subscribing!<br>We only send updates related to our business. No spam.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-credit">
+    © 2025 P & J Technologies. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Your JS file(s) -->
+<script src="pj-footer.js"></script>
+
+</body>
+
+</html>
