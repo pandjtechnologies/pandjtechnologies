@@ -1,48 +1,705 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'vendor/autoload.php';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-// reCAPTCHA validation
-$recaptcha_secret = '6LcN2E0rAAAAAHh5me_ukv0gWMIsgfTuYgLv_Iub';
-$response = $_POST['g-recaptcha-response'];
+    <title>P & J Technologies | Authorized Exam Centers, Web Design, Digital Marketing Courses & IT Jobs in Vijayawada  </title>
 
-$verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptcha_secret}&response={$response}");
-$captcha_success = json_decode($verify);
 
-if (!$captcha_success->success) {
-    die("reCAPTCHA verification failed. Please try again.");
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+  .pj-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-// Handle form
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name    = htmlspecialchars($_POST["name"]);
-    $email   = htmlspecialchars($_POST["email"]);
-    $message = htmlspecialchars($_POST["message"]);
+.pj-logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
 
-    $mail = new PHPMailer(true);
+.pj-logo-wrapper img {
+  height: 85px;
+  width: 85px;
+}
 
-    try {
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.elasticemail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'pandjtechnologies@gmail.com'; // Your Elastic Email address
-        $mail->Password   = '3E0E73CFD585BC4F476A2673871B5B5F282D60C098988C5D1008A603B0570720A817A447ACC2EC017B8268B2C404AD08';   // Replace this with your API key
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+.pj-text-container {
+  display: flex;
+  flex-direction: column;
+}
 
-        $mail->setFrom('pandjtechnologies@gmail.com', 'P & J Technologies');
-        $mail->addAddress('pandjtechnologies@gmail.com');
-        $mail->addReplyTo($email, $name);
+.company-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #012760;
+ 
+}
 
-        $mail->isHTML(false);
-        $mail->Subject = 'New Contact Form Submission';
-        $mail->Body    = "Name: $name\nEmail: $email\nMessage:\n$message";
 
-        $mail->send();
-        echo "Thank you! Your message has been sent.";
-    } catch (Exception $e) {
-        echo "Mailer Error: {$mail->ErrorInfo}";
+
+.ampersand {
+  font-family: 'Times New Roman', serif;
+  font-size: 30px;
+  padding: 0 4px;
+}
+
+.pj-tagline {
+  margin-top: 2px;
+  background: #012760;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .ampersand {
+    font-size: 22px; /* Smaller size for mobile */
+
+  }
+  .company-name{
+    font-size: 26px;
+  }
+   .pj-tagline { font-size: 8px; padding: 1px 4px; }
+}
+
+</style>
+  <!-- Include this header content directly or use a server include if possible -->
+  <!-- Either paste navbar.html content here, or use a partial system (PHP, React, etc.) -->
+  <div id="navbar">
+   
+    <!-- navbar.html -->
+<header class="pj-header">
+  <div class="pj-nav-container">
+    <div class="pj-logo-wrapper">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" />
+      <div class="pj-text-container">
+        <span class="company-name">
+         P <span class="ampersand">&</span> J Technologies
+        </span>
+        <span class="pj-tagline">Proctoring. Justice. Innovation.</span>
+      </div>
+    </div>
+
+    <nav class="pj-nav">
+      <ul>
+        <li id="pj-dropdown-who">
+          <a href="javascript:void(0);" tabindex="0">Who Are We <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-who">
+         <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+          </div>
+        </li>
+        <li id="pj-dropdown-services">
+          <a href="javascript:void(0);" tabindex="0">Services <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-services">
+             <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="pj-hamburger" id="pj-hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="pj-mobile-nav" id="pj-mobile-menu">
+    <div class="pj-mobile-toggle" id="pj-mobile-who-toggle">
+      <span>Who Are We</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-who-menu">
+    <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+
+    </div>
+
+    <div class="pj-mobile-toggle" id="pj-mobile-services-toggle">
+      <span>Services</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-services-menu">
+       <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+    </div>
+
+    <a href="services.html">What We Do</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="faq.html">FAQs</a>
+    <a href="careers.html">Careers</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contactus">Contact</a>
+  </div>
+</header>
+
+  </div>
+  <script src="navbar.js"></script>
+
+    <!-- Page Loader -->
+  <div id="pageLoader">
+    <div class="loader-wrapper">
+      <div class="loader-ring-container">
+        <div class="loader-ring"></div>
+        <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="P & J Logo" class="loader-logo">
+      </div>
+      <div class="loader-text">P & J Technologies</div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+ 
+
+  <!-- Script to remove loader -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+ <script src="script.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 40px;
+ 
+}
+
+.faq-header-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-header-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.faq-header-text p {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.faq-header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-header-image img {
+  max-width: 400px;
+  width: 100%;
+  
+ 
+  padding: 10px;
+ 
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-header {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .faq-header-text h1 {
+    font-size: 36px;
+  }
+
+  .faq-header-image img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+.main-content {
+  padding: 40px 20px; /* Your original body padding */
+}
+
+
+    * {
+      box-sizing: border-box;
     }
+  
+
+    h1, h2, h3 {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #1e40af;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75em;
+      color: #f5f5f5;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      color: #babcbf;
+      max-width: 700px;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .portfolio-section {
+      background: linear-gradient(135deg, #000428, #004e92);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      padding: 30px 40px;
+      margin-bottom: 50px;
+      transition: transform 0.3s ease;
+      color: white;
+    }
+
+    .portfolio-section:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 40px rgba(59,130,246,0.7);
+    }
+
+    .portfolio-text {
+      flex: 1 1 450px;
+      min-width: 280px;
+    }
+
+    .portfolio-image {
+      flex: 1 1 450px;
+      min-width: 280px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      background: white;
+      padding: 10px;
+    }
+
+    .portfolio-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      border-radius: 10px;
+    }
+
+    .portfolio-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .testimonials {
+      background: linear-gradient(135deg, #000428, #004e92);
+      border-radius: 12px;
+      padding: 40px 30px;
+      margin-bottom: 50px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #cbd5e1;
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #60a5fa;
+    }
+
+    .testimonial-item {
+      background: #334155;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      position: relative;
+      font-style: italic;
+      color: #e0e7ff;
+      line-height: 1.4;
+    }
+
+    .testimonial-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .testimonial-author {
+      margin-top: 12px;
+      font-weight: 600;
+      color: #38bdf8;
+      font-style: normal;
+      text-align: right;
+    }
+    
+
+  
+
+
+    a {
+      color: #bfdbfe;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+  .portfolio-section {
+    flex-direction: column;
+    gap: 10px; /* ✅ Reduce or remove vertical gap */
+  }
+
+  .portfolio-text,
+  .portfolio-image {
+    min-width: 100%;
+  }
+
+  .testimonials {
+    padding: 30px 20px;
+  }
+  .portfolio-text {
+    flex: 1 1 300px;
+    
 }
-?>
+.portfolio-image {
+    flex: 1 1 320px;
+}}
+  </style>
+  <!-- Testimonials Section Header -->
+<!-- AOS stylesheet (in <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<div class="faq-header" data-aos="fade-up">
+  <div class="faq-header-text">
+   <h1>Our Portfolio</h1>
+      <p>
+         Discover our expertise in software development, design, and digital solutions tailored for modern businesses.
+      </p>
+</div>
+  <div class="faq-header-image">
+    <img src="https://i.ibb.co/4nQY3zxv/digital-designers-team-drawing-with-pen-computer-monitor-74855-10586-removebg-preview.png" alt="FAQ illustration" />
+  </div>
+</div>
+
+<!-- AOS script (before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<main class="main-content">
+<body>
+
+ 
+
+  <div class="container">
+
+    <section class="portfolio-section" data-aos="fade-up">
+      <div class="portfolio-text">
+        <h2 data-aos="fade-right">Authorized Proctoring & Test Center</h2>
+        <p data-aos="fade-in">
+          We operate a trusted Authorized Proctoring and Exam Center, ensuring secure, fair, and remote exam monitoring using advanced AI technology with facial recognition and suspicious activity detection.
+        </p>
+      </div>
+      <div class="portfolio-image" data-aos="zoom-in">
+        <img src="https://i.ibb.co/fV2S5CTM/medium-shot-woman-working-laptop-23-2149300643.jpg" alt="Proctoring Center" />
+      </div>
+    </section>
+
+    <section class="portfolio-section" data-aos="fade-up">
+      <div class="portfolio-text">
+        <h2 data-aos="fade-right">Website Design</h2>
+        <p data-aos="fade-in">
+          We craft modern, responsive websites tailored to your brand, enhancing user experience and engagement with cutting-edge design principles and smooth functionality.
+        </p>
+      </div>
+      <div class="portfolio-image" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Website Design" />
+      </div>
+    </section>
+
+    <section class="portfolio-section" data-aos="fade-up">
+      <div class="portfolio-text">
+        <h2 data-aos="fade-right">UX/UI Design</h2>
+        <p data-aos="fade-in">
+          Focused on user-centric designs, we create intuitive interfaces that make navigation effortless and visually appealing, boosting customer satisfaction and retention.
+        </p>
+      </div>
+      <div class="portfolio-image" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="UX UI Design" />
+      </div>
+    </section>
+
+    <section class="portfolio-section" data-aos="fade-up">
+      <div class="portfolio-text">
+        <h2 data-aos="fade-right">BPO Sector Expansion</h2>
+        <p data-aos="fade-in">
+          We are actively expanding into the BPO sector, offering cutting-edge solutions for customer support, data processing, and operational efficiency to help businesses scale.
+        </p>
+      </div>
+      <div class="portfolio-image" data-aos="zoom-in">
+        <img src="https://i.ibb.co/zTrh2mgK/istockphoto-170153122-612x612.jpg" alt="BPO Sector" />
+      </div>
+    </section>
+
+    <section class="portfolio-section" data-aos="fade-up">
+      <div class="portfolio-text">
+        <h2 data-aos="fade-right">Recruiting Sector Expansion</h2>
+        <p data-aos="fade-in">
+          Our upcoming recruiting services aim to connect top talent with leading companies, offering tailored hiring solutions and recruitment strategies to meet diverse industry needs.
+        </p>
+      </div>
+      <div class="portfolio-image" data-aos="zoom-in">
+        <img src="https://i.ibb.co/PLBJ6bf/business-colleagues-working-reports-communicating-while-working-office-focus-is-woman.jpg" alt="Recruiting Sector" />
+      </div>
+    </section>
+
+    <section class="testimonials" data-aos="fade-up">
+      <h2>What Our Clients Say</h2>
+
+      <div class="testimonial-item" data-aos="zoom-in">
+        "Their proctoring services ensured our online exams ran smoothly and securely. Highly professional and reliable team!"
+        <div class="testimonial-author">— Rajesh Kumar, EduTech Solutions</div>
+      </div>
+
+      <div class="testimonial-item" data-aos="zoom-in">
+        "The websites they designed are visually stunning and easy to navigate, which boosted our online presence significantly."
+        <div class="testimonial-author">— Anjali Mehta, Happy Client</div>
+      </div>
+
+      <div class="testimonial-item" data-aos="zoom-in">
+        "We're excited about their expansion into BPO and recruiting sectors. Their commitment to quality is unmatched."
+        <div class="testimonial-author">— Karan Singh, Business Partner</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  </main>
+
+
+</body>
+
+
+
+
+
+<!-- Chat panel -->
+<!-- Chat toggle button -->
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="pj-footer.css">
+
+<body>
+
+<!-- Chat toggle button -->
+<div class="chat-toggle" onclick="toggleChat()">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chat Icon">
+</div>
+
+<!-- Chat panel -->
+<div class="chat-panel" id="chatPanel" style="display:none;">
+  <div class="chat-header">
+    Send Us a Message
+    <span class="close" onclick="toggleChat()">×</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="input-area">
+    <input type="text" id="chatInput" placeholder="Your answer..." autocomplete="off" />
+    <button id="sendBtn" disabled>Next</button>
+  </div>
+</div>
+
+<!-- Success toast -->
+<div class="toast" id="successToast" style="display:none;">✅ Thank you! We will connect you shortly.</div>
+
+<!-- Footer HTML -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-col">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" class="footer-logo">
+      <h2>P & J Technologies</h2>
+      <div class="footer-tagline">PROCTORING. JUSTICE. INNOVATION.</div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-user"></i> About Us</a></li>
+        <li><a href="Faq.html"><i class="fas fa-users"></i> FAQs</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="carrers.html"><i class="fas fa-users"></i> Careers</a></li>
+        <li><a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="policies.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        <li><a href="policies.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      <ul>
+           <li><a href="services.html#authorized"><i class="fas fa-check-circle"></i>Authorised Test Center</a></li>
+        <li><a href="services.html#web"><i class="fas fa-desktop"></i> Web Development</a></li>
+        <li><a href="services.html#app"><i class="fas fa-desktop"></i> Mobile App Development</a></li>
+        <li><a href="services.html#marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+         
+        <li><a href="services.html#erp"><i class="fas fa-network-wired"></i> ERP Services</a></li>
+          <li><a href="services.html#consulting"><i class="fas fa-network-wired"></i> IT Consulting & Business Solutions</a></li>
+          <li><a href="services.html#othermarketing"><i class="fas fa-network-wired"></i> Marketing & Co-Working Spaces</a></li>
+     
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 49-1-127, 2nd Floor,<br>Opp. Vidyuth Soudha<br> Vijayawada – 520004</p>
+      <p><i class="fas fa-phone"></i> Phone (General): <a href="tel:+918977787605">+91 8977787605</a></p>
+      <p><i class="fas fa-headset"></i> Phone (Support): <a href="tel:+918977787606">+91 8977787606</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@pandjtechnologies.com"><span style="font-size: 13px;">contact@pandjtechnologies.com</span></a></p>
+    </div>
+
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-bottom">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1BnU7jcy78/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/pandjtech1437"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/pandj-technologies-835796368/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/technologiespj/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Newsletter Form -->
+    <div class="newsletter">
+   <p >Subscribe to our newsletter:</p>
+
+      <form id="subscribeForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5b9ec738-33ed-438c-9a7f-de11e2251a36">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="success-message" id="successMessage" style="display:none;">
+        ✅ Thank you for subscribing!<br>We only send updates related to our business. No spam.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-credit">
+    © 2025 P & J Technologies. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Your JS file(s) -->
+<script src="pj-footer.js"></script>
+ <!-- External JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+
+</html>
