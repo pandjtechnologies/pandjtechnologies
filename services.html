@@ -1,1 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P & J Technologies | Authorized Exam Centers, Web Design, Digital Marketing Courses & IT Jobs in Vijayawada  </title>
 
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
+
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body>
+
+  <!-- Include this header content directly or use a server include if possible -->
+  <!-- Either paste navbar.html content here, or use a partial system (PHP, React, etc.) -->
+   <div id="navbar">
+   
+    <!-- navbar.html -->
+<header class="pj-header">
+  <div class="pj-nav-container">
+    <div class="pj-logo-wrapper">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" />
+      <div class="pj-text-container">
+        <span class="company-name">
+         P <span class="ampersand">&</span> J Technologies
+        </span>
+        <span class="pj-tagline">Proctoring. Justice. Innovation.</span>
+      </div>
+    </div>
+
+    <nav class="pj-nav">
+      <ul>
+        <li id="pj-dropdown-who">
+          <a href="javascript:void(0);" tabindex="0">Who Are We <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-who">
+         <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+          </div>
+        </li>
+        <li id="pj-dropdown-services">
+          <a href="javascript:void(0);" tabindex="0">Services <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-services">
+             <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="pj-hamburger" id="pj-hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="pj-mobile-nav" id="pj-mobile-menu">
+    <div class="pj-mobile-toggle" id="pj-mobile-who-toggle">
+      <span>Who Are We</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-who-menu">
+    <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+
+    </div>
+
+    <div class="pj-mobile-toggle" id="pj-mobile-services-toggle">
+      <span>Services</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-services-menu">
+       <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+    </div>
+
+    <a href="services.html">What We Do</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="faq.html">FAQs</a>
+    <a href="careers.html">Careers</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contactus">Contact</a>
+  </div>
+</header>
+
+  </div>
+  <script src="navbar.js"></script>
+
+  <div id="pageLoader">
+    <div class="loader-wrapper">
+      <div class="loader-ring-container">
+        <div class="loader-ring"></div>
+        <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="P & J Logo" class="loader-logo">
+      </div>
+      <div class="loader-text">P & J Technologies</div>
+    </div>
+  </div>
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .services-wrapper {
+      background-color: #f9fbfd;
+      padding: 60px 20px;
+    }
+
+    .services-container {
+        overflow: hidden;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .service-box {
+      display: flex;
+      gap: 30px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      align-items: flex-start;
+      transition: transform 0.3s ease;
+    }
+
+    .service-box.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-img {
+      flex: 1;
+      min-width: 40%;
+    }
+
+    .service-img img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 100%;
+      max-height: 300px;
+    }
+
+    .service-info {
+      flex: 1;
+      padding: 0 10px;
+    }
+
+    .service-info h2 {
+      font-size: 24px;
+      color: #002d62;
+      margin-bottom: 15px;
+    }
+
+    .service-info p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .read-more-content {
+      display: none;
+    }
+
+    .service-buttons {
+      margin-top: 30px;
+    }
+
+    .read-more-btn,
+    .partner-btn {
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more-btn {
+     background: linear-gradient(135deg, #000428, #004e92);
+      color: white;
+    }
+
+    .read-more-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .partner-btn {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .partner-btn:hover {
+      background-color: #1e7e34;
+    }
+
+    @media (max-width: 900px) {
+      .service-box,
+      .service-box.reverse {
+        flex-direction: column;
+      }
+
+      .service-img img {
+        max-height: 250px;
+      }
+    }
+    .platform-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.platform-logos img {
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(0%);
+  transition: transform 0.2s ease;
+}
+
+.platform-logos img:hover {
+  transform: scale(1.05);
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 90vh; /* Changed from 100vh */
+      background: url('https://i.ibb.co/pjd7kb0x/young-couple-buying-car-car-showroom-1303-15127.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 10%;
+      color: #2c3e50;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      /* Less intense gradient overlay */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.55) 40%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      background-color: #000c17;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1a252f;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 20px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .hero::before {
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-down">
+    <div class="hero-content" data-aos="fade-right">
+      <h1 data-aos="fade-up">Solutions That Drive Impact</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        We provide scalable services tailored to your needs — from digital strategy and development to marketing and consulting. Our experts help you achieve measurable success.
+      </p>
+     <a href="#authorized" class="btn" data-aos="zoom-in" data-aos-delay="400">READ MORE</a>
+
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+
+<style>
+  /* Font (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* Circle Boxes Styling */
+.circle-box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #000428, #004e92);
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.circle-box:hover {
+  transform: translateY(-8px);
+}
+
+.circle-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.circle-number::after {
+  content: "+";
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-left: 4px;
+}
+
+.circle-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  max-width: 120px;
+}
+
+</style>
+<body>
+<!-- What Sets Us Apart Section -->
+<section style=" padding: 80px 20px; text-align: center; font-family: 'Inter', sans-serif;">
+  <h2 style="font-size: 2.5rem; font-weight: 800; color: #162447; margin-bottom: 20px;">What Sets Us Apart</h2>
+  <p style="font-size: 1.1rem; color: #4a5568; margin-bottom: 60px;">
+    Even as a startup, we're making an impact through innovation, dedication, and results-driven collaboration.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+    
+    <!-- Card 1 -->
+    <div class="circle-box">
+      <div class="circle-number" data-count="25">0</div>
+      <div class="circle-label">Client Inquiries</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="circle-box">
+      <div class="circle-number" data-count="10">0</div>
+      <div class="circle-label">Projects Completed</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="circle-box">
+      <div class="circle-number" data-count="5">0</div>
+      <div class="circle-label">Industries Served</div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="circle-box">
+      <div class="circle-number" data-count="95">0</div>
+      <div class="circle-label">Positive Feedback %</div>
+    </div>
+
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".circle-number");
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-count");
+
+      const startCountLoop = () => {
+        let current = 0;
+        const duration = 2000; // total time to count
+        const steps = Math.ceil(duration / 16); // ~60fps
+        const increment = target / steps;
+
+        const count = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(count);
+          } else {
+            counter.textContent = target;
+            setTimeout(() => {
+              counter.textContent = "0";
+              startCountLoop(); // start again
+            }, 5000); // wait 1 second before restarting
+          }
+        };
+
+        count();
+      };
+
+      startCountLoop();
+    });
+  });
+</script>
+
+</body>
+
+
+
+    <section class="services-wrapper">
+    <div class="services-container">
+      <!-- Service Blocks -->
+      <!-- Just change images/texts to suit your real content -->
+      <!-- You can copy and change each one for all 8 -->
+
+      <!-- SERVICE 1 -->
+      <div class="service-box" data-aos="fade-right" id="authorized">
+        <div class="service-img">
+          <img src="https://i.ibb.co/GQ3GKfQd/close-up-hand-writing-notebook-23-2148888825.jpg" alt="Service 1">
+        </div>
+        <div class="service-info">
+  <h2>Authorised Testing & Certification Center</h2>
+ <p>Our facility currently supports platforms like <strong>PSI</strong>, <strong>Meazure Learning</strong>, and other global computer-based exam providers. We strictly follow all required protocols to ensure security, accuracy, and candidate integrity.We operate a secure, fully-equipped testing center designed for international computer-based exams.</p>
+
+  <div class="platform-logos">
+    <img src="https://i.ibb.co/1GvGp6N4/images.jpg" alt="PSI Exams" />
+    <img src="https://i.ibb.co/7JJ6NhK5/meazure-learning-01-01.jpg" alt="Meazure Learning" />
+    <!-- Add more logos as needed -->
+  </div>
+
+ 
+
+  <div class="read-more-content">
+    <p>For the past <strong>3 years</strong>, we've provided high-quality facilities to support candidates preparing for professional certifications and academic assessments.Located in the heart of the city’s IT Hub, we’re surrounded by over <strong>15 colleges and universities</strong> within a 30 km radius, making us a preferred center for both students and working professionals.</p>
+
+    <ul>
+      <li>📏 <strong>4 feet spacing</strong> between test tables, ensuring privacy and comfort</li>
+      <li>🧊 <strong>Fully air-conditioned testing rooms</strong></li>
+      <li>🎥 <strong>24x7 CCTV surveillance</strong> for full security</li>
+      <li>🔐 <strong>Locker room facilities</strong> for secure storage</li>
+      <li>📍 <strong>500m from City Bus Stand</strong> | <strong>3 km from Railway Station</strong></li>
+      <li>⚡ High-speed internet and uninterrupted power backup</li>
+      <li>👨‍💼 On-site support staff and proctors</li>
+    </ul>
+
+    <p>Our facility is ready to support platforms like <strong>PSI</strong>, <strong>Meazure Learning</strong>, and other computer-based exam providers. We follow all required protocols, including:</p>
+
+    <ul>
+      <li>🪪 Identity verification and exam-day candidate management</li>
+      <li>💻 Secure workstations and exam-ready systems</li>
+      <li>📵 No-device zones and secure locker access</li>
+      <li>📋 Compliance with proctoring, reporting, and exam integrity guidelines</li>
+    </ul>
+
+    <p>If you're a certification body or test delivery provider, we invite you to explore our facility for potential partnership or delivery setup.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+<a href="contactus.html">
+  <button class="partner-btn">Partner With Us</button>
+</a>
+
+  </div>
+</div>
+
+      </div>
+
+      <!-- SERVICE 2 -->
+      <div class="service-box reverse" data-aos="fade-up" id="web">
+        <div class="service-img">
+          <img src="https://i.ibb.co/sJ2SX9sK/html-css-collage-concept-with-person-23-2150062008.jpg" alt="Service 2">
+        </div>
+     <div class="service-info">
+  <h2>Web Development & UX/UI Design</h2>
+  <p>We craft fast, responsive, and scalable websites tailored to your brand. For the past <strong>5+ years</strong>, we've helped businesses build powerful online identities through clean code and exceptional user experience design.</p>
+
+  <div class="read-more-content">
+    <p>Our expert team blends <strong>modern web development</strong> practices with intuitive <strong>UX/UI design</strong> to create engaging digital experiences. Whether you're a startup or an enterprise, we deliver websites that are not only beautiful but built to convert.</p>
+
+    <ul>
+      <li>🖥️ <strong>Custom website development</strong> (HTML, CSS, JS, React, etc.)</li>
+      <li>🎨 <strong>UI/UX design services</strong> — Figma, Adobe XD, and Sketch</li>
+      <li>📱 <strong>Fully responsive designs</strong> for mobile, tablet, and desktop</li>
+      <li>⚡ <strong>SEO-optimized</strong> code and lightning-fast performance</li>
+      <li>🔐 <strong>Secure and scalable backend</strong> integrations (PHP, Node.js, etc.)</li>
+      <li>🛒 E-commerce solutions with payment gateway integration</li>
+      <li>📊 Integration with analytics, CRM, and marketing tools</li>
+    </ul>
+
+    <p>We follow a streamlined process from wireframing to final deployment, ensuring every project meets performance, accessibility, and usability standards.</p>
+
+    <ul>
+      <li>📋 Requirement gathering and goal analysis</li>
+      <li>📐 Wireframes, prototypes, and design approval cycles</li>
+      <li>💻 Agile development with regular milestones and feedback loops</li>
+      <li>✅ QA testing across devices and browsers</li>
+      <li>🚀 Hosting, deployment, and post-launch support</li>
+    </ul>
+
+    <p>If you're looking to revamp your website or launch a new one, our team is ready to deliver a product that drives real results. Let’s build something impactful together.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+    <a href="contactus.html">
+  <button class="partner-btn">Start a Project</button>
+</a>
+  </div>
+</div>
+
+      </div>
+
+      <!-- SERVICE 3 -->
+      <div class="service-box" data-aos="fade-up" id="app">
+        <div class="service-img">
+          <img src="https://i.ibb.co/27tjXYRj/html-css-collage-concept-23-2150061960.jpg" alt="Service 3">
+        </div>
+     <div class="service-info">
+  <h2>Mobile App Development Services</h2>
+  <p>We build high-performance mobile applications tailored for iOS and Android. With over <strong>5+ years of experience</strong>, we've helped businesses turn ideas into user-friendly, feature-rich mobile solutions.</p>
+
+  <div class="read-more-content">
+    <p>From concept to launch, our team specializes in crafting custom apps that offer smooth performance, intuitive interfaces, and scalability. Whether it's a startup MVP or a full-scale enterprise app, we deliver mobile experiences that engage and convert.</p>
+
+    <ul>
+      <li>📱 <strong>Native app development</strong> (Swift, Kotlin)</li>
+      <li>🔁 <strong>Cross-platform apps</strong> using Flutter and React Native</li>
+      <li>🎯 <strong>UX/UI design</strong> focused on mobile user behavior</li>
+      <li>🔒 <strong>Secure authentication</strong> and data encryption</li>
+      <li>🌐 <strong>API integration</strong> with third-party services</li>
+      <li>📦 App store deployment and support (Google Play & Apple App Store)</li>
+      <li>📊 In-app analytics and performance monitoring</li>
+    </ul>
+
+    <p>We follow a structured development process that ensures your app is built with performance, security, and scalability in mind. Every app is tested thoroughly and optimized for various screen sizes and operating systems.</p>
+
+    <ul>
+      <li>📝 Requirements and feature planning</li>
+      <li>🧩 Wireframing, UI/UX design, and user flow mapping</li>
+      <li>⚙️ Agile development and modular architecture</li>
+      <li>🧪 Multi-device testing and QA checks</li>
+      <li>🚀 App publishing, post-launch updates, and maintenance</li>
+    </ul>
+
+    <p>If you're looking to develop a mobile app that stands out in the crowded app marketplace, our team is ready to bring your vision to life. Let’s create something powerful together.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+      <a href="contactus.html">
+  <button class="partner-btn">Get a Quote</button>
+</a>
+   
+  </div>
+</div>
+
+      </div>
+
+      <!-- SERVICE 4 -->
+      <div class="service-box reverse" data-aos="fade-up" id="marketing">
+        <div class="service-img">
+          <img src="https://i.ibb.co/Y41sHxJG/top-viewtop-view-manager-employee-doing-teamwork-business-office-looking-charts-laptop-display-48225.jpg" alt="Service 4">
+        </div>
+       <div class="service-info">
+  <h2>Digital Marketing & SEO Services</h2>
+  <p>We help businesses grow their online presence through strategic digital marketing and result-driven SEO. With <strong>proven experience over the last 5+ years</strong>, we've helped brands boost traffic, generate leads, and increase conversions.</p>
+
+  <div class="read-more-content">
+    <p>Our team blends data-driven strategies with creative content and performance marketing to deliver real business impact. Whether you're launching a new product, optimizing your website, or running a campaign — we bring visibility and value to your brand.</p>
+
+    <ul>
+      <li>🔍 <strong>Search Engine Optimization (SEO)</strong> – on-page, off-page, and technical</li>
+      <li>📈 <strong>Google Ads & PPC campaigns</strong> with high ROI targeting</li>
+      <li>📱 <strong>Social media marketing</strong> on Facebook, Instagram, LinkedIn & more</li>
+      <li>✉️ <strong>Email marketing</strong> campaigns and automation funnels</li>
+      <li>📝 <strong>Content creation & strategy</strong> – blogs, landing pages, ad creatives</li>
+      <li>📊 <strong>Analytics, tracking, and performance reporting</strong></li>
+      <li>🌐 <strong>Local SEO & Google Business Profile optimization</strong></li>
+    </ul>
+
+    <p>Our goal is to turn your website and digital platforms into lead-generation machines. We use white-hat techniques and the latest tools to ensure long-term rankings, engagement, and measurable results.</p>
+
+    <ul>
+      <li>🧠 Competitor research and keyword planning</li>
+      <li>📋 SEO audits and technical health checks</li>
+      <li>🚀 Campaign planning, execution, and optimization</li>
+      <li>📱 Mobile-first strategies and user experience improvements</li>
+      <li>📢 Brand awareness through consistent and compelling messaging</li>
+    </ul>
+
+    <p>If you're ready to grow your business online, dominate search results, or improve your ad performance — our digital marketing experts are here to help. Let’s boost your visibility and sales together.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+      <a href="contactus.html">
+  <button class="partner-btn">Let's Grow</button>
+</a>
+  
+  </div>
+</div>
+
+      </div>
+
+ <div class="service-box" data-aos="fade-up" id="erp">
+        <div class="service-img">
+          <img src="https://i.ibb.co/xq72v3qq/flat-design-technology-erp-illustration-23-2149356400.jpg" alt="Service 3">
+        </div>
+     <div class="service-info">
+  <h2>ERP & Business Automation</h2>
+  <p>We deliver robust ERP systems and automation solutions designed to streamline operations and drive efficiency. With over <strong>5 years of experience</strong>, we've helped organizations — especially <strong>schools and colleges</strong> — digitize workflows, centralize data, and reduce manual tasks.</p>
+
+  <div class="read-more-content">
+    <p>Our ERP solutions are tailored to the unique needs of educational institutions and growing businesses. From managing student data to automating finance, HR, and inventory — we empower your organization to operate smarter and scale faster.</p>
+
+    <ul>
+      <li>🏫 <strong>Complete School & College ERP</strong> – admissions, attendance, exams, fees, and timetable management</li>
+      <li>📚 <strong>LMS integration</strong> for seamless e-learning & content delivery</li>
+      <li>📊 <strong>Custom dashboards</strong> for admin, faculty, students, and parents</li>
+      <li>📁 <strong>Document management & digital recordkeeping</strong></li>
+      <li>💼 <strong>HR, payroll, and employee management modules</strong></li>
+      <li>📦 <strong>Inventory & asset tracking automation</strong></li>
+      <li>📈 <strong>Finance, billing, and real-time reporting tools</strong></li>
+    </ul>
+
+    <p>Our systems are cloud-enabled, mobile-friendly, and scalable — making them ideal for institutions of all sizes. We focus on data security, user experience, and long-term maintainability.</p>
+
+    <ul>
+      <li>🛠️ Customized modules based on your operational needs</li>
+      <li>🔐 Role-based access control and secure data storage</li>
+      <li>⚙️ API integration with existing tools and third-party platforms</li>
+      <li>📋 Onboarding, training, and full implementation support</li>
+      <li>🧾 Audit-ready reports for compliance and management review</li>
+    </ul>
+
+    <p>If you're a school, college, or business ready to reduce manual workload, improve decision-making, and modernize operations — our ERP and automation experts are here to help. Let’s digitize your future.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+
+  <a href="contactus.html">
+  <button class="partner-btn">Schedule a Demo</button>
+</a>
+  </div>
+</div>
+
+      </div>
+
+
+       <div class="service-box reverse" data-aos="fade-up" id="consulting">
+        <div class="service-img">
+          <img src="https://i.ibb.co/sddjCHV8/people-working-html-codes-23-2150038851.jpg" alt="Service 4">
+        </div>
+   <div class="service-info">
+  <h2>IT Consulting & Business Solutions</h2>
+  <p>We empower businesses with strategic IT consulting and scalable technology solutions. With over <strong>5 years of experience</strong>, we've helped startups, SMEs, and enterprises align their technology with business goals.</p>
+
+  <div class="read-more-content">
+    <p>Our consulting approach is tailored to solve real-world challenges — whether it's modernizing legacy systems, optimizing operations, or launching digital transformation. We bring the expertise to help you make smarter tech decisions, faster.</p>
+
+    <ul>
+      <li>💼 <strong>End-to-end IT consulting</strong> for digital transformation</li>
+      <li>🔧 <strong>Custom software & ERP solutions</strong> tailored to business workflows</li>
+      <li>☁️ <strong>Cloud migration & infrastructure optimization</strong> (AWS, Azure, GCP)</li>
+      <li>🔐 <strong>Cybersecurity consulting</strong> and data protection strategies</li>
+      <li>🧠 <strong>Business process automation</strong> with AI & RPA integrations</li>
+      <li>🧩 <strong>Technology audits, IT roadmaps, and cost optimization</strong></li>
+      <li>📈 <strong>Scalable solutions</strong> for growth, agility, and market adaptation</li>
+    </ul>
+
+    <p>We follow a collaborative, insight-driven model to ensure that every solution is tailored, future-ready, and ROI-focused. Our team works alongside your leadership, IT staff, and key stakeholders to ensure clarity, alignment, and execution.</p>
+
+    <ul>
+      <li>📋 Requirement analysis & strategic planning</li>
+      <li>📊 Business process mapping & gap identification</li>
+      <li>🧪 Proof of concept (PoC) development and testing</li>
+      <li>⚙️ Implementation support and change management</li>
+      <li>📡 Ongoing monitoring, support, and consulting</li>
+    </ul>
+
+    <p>If you're looking to optimize your operations, scale your systems, or simply need expert guidance on your IT journey — our consultants are here to lead the way. Let’s build future-ready solutions together.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+      <a href="contactus.html">
+  <button class="partner-btn">Consult With Us</button>
+</a>
+   
+  </div>
+</div>
+
+      </div>
+      <!-- Add SERVICE 5 to 8 similarly -->
+        <div class="service-box" data-aos="fade-up" id="othermarketing">
+        <div class="service-img">
+          <img src="https://i.ibb.co/xtg8cKfM/full-shot-students-studying-indoors-23-2149647036.jpg" alt="Service 3">
+        </div>
+      <div class="service-info">
+  <h2>Digital Menu Design, Marketing & Co-Working Spaces</h2>
+  <p>We empower local businesses with modern digital tools, creative marketing, and vibrant co-working environments. From eye-catching digital menus to flexible office spaces — we provide everything you need to grow, connect, and thrive.</p>
+
+  <div class="read-more-content">
+    <p>Whether you’re a café, restaurant, boutique, or freelancer — we help you digitize your customer experience, boost your visibility, and work smarter with professionally designed tools and spaces built for business success.</p>
+
+    <ul>
+      <li>🍽️ <strong>Digital Menu Design</strong> – QR-based menus, interactive ordering, and brand-themed layouts</li>
+      <li>📱 <strong>WhatsApp & social media integration</strong> for direct orders and engagement</li>
+      <li>🎨 <strong>Custom branding & graphic design</strong> for menus, posters, and online content</li>
+      <li>📣 <strong>Local digital marketing campaigns</strong> to boost foot traffic and online visibility</li>
+      <li>🖥️ <strong>Business listing & Google My Business optimization</strong></li>
+      <li>🏢 <strong>Co-working space access</strong> with meeting rooms, high-speed Wi-Fi, and 24/7 security</li>
+      <li>🤝 <strong>Networking & business support</strong> within our collaborative community</li>
+    </ul>
+
+    <p>Our co-working hub is located in a prime commercial area, surrounded by cafes, transit points, and local footfall — making it an ideal launchpad for small businesses, freelancers, and remote teams.</p>
+
+    <ul>
+      <li>💡 Affordable desks, private cabins & flexible rental plans</li>
+      <li>📍 Walkable distance from city center and public transport</li>
+      <li>🎥 Surveillance, power backup & fully-equipped spaces</li>
+      <li>📋 On-demand marketing assistance & brand consultations</li>
+      <li>🤖 Optional access to business automation tools & digital solutions</li>
+    </ul>
+
+    <p>If you're a local business looking to modernize, market better, or find the perfect work spot — we’re here to support your growth. Let’s build your presence, boost your reach, and fuel your journey.</p>
+  </div>
+
+  <div class="service-buttons">
+    <button class="read-more-btn">Read More</button>
+      <a href="contactus.html">
+  <button class="partner-btn">Partner With Us</button>
+</a>
+   
+  </div>
+</div>
+
+      </div>
+
+    </div>
+  </section>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .cta-section {
+    background: rgb(212, 222, 227);
+    color: rgb(2, 0, 45);
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .cta-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0 0 16px 0;
+  }
+
+  .cta-section p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 0 0 32px 0;
+  }
+
+  .cta-button {
+    background-color: white;
+    color: #003c8f;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #e6e6e6;
+  }
+</style>
+
+<body>
+
+<section class="cta-section" aria-label="Call to Action">
+  <h2>Let’s Build Something Great Together</h2>
+  <p>Partner with us for your next digital transformation.</p>
+  <a href="contactus.html">
+  <button class="cta-button">Partner With Us</button>
+</a>
+  
+</section>
+
+</body>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Read More/Read Less toggling
+    const readMoreButtons = document.querySelectorAll(".read-more-btn");
+    readMoreButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const parent = btn.closest(".service-info");
+        const content = parent.querySelector(".read-more-content");
+        const isOpen = content.style.display === "block";
+        content.style.display = isOpen ? "none" : "block";
+        btn.textContent = isOpen ? "Read More" : "Read Less";
+      });
+    });
+  </script>
+
+
+  <!-- Script to remove loader -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+<!-- Chat panel -->
+<!-- Chat toggle button -->
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="pj-footer.css">
+
+<body>
+
+<!-- Chat toggle button -->
+<div class="chat-toggle" onclick="toggleChat()">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chat Icon">
+</div>
+
+<!-- Chat panel -->
+<div class="chat-panel" id="chatPanel" style="display:none;">
+  <div class="chat-header">
+    Send Us a Message
+    <span class="close" onclick="toggleChat()">×</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="input-area">
+    <input type="text" id="chatInput" placeholder="Your answer..." autocomplete="off" />
+    <button id="sendBtn" disabled>Next</button>
+  </div>
+</div>
+
+<!-- Success toast -->
+<div class="toast" id="successToast" style="display:none;">✅ Thank you! We will connect you shortly.</div>
+
+<!-- Footer HTML -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-col">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" class="footer-logo">
+      <h2>P & J Technologies</h2>
+      <div class="footer-tagline">PROCTORING. JUSTICE. INNOVATION.</div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      
+    <ul>
+        <li><a href="index.html"><i class="fas fa-user"></i> About Us</a></li>
+        <li><a href="Faq.html"><i class="fas fa-users"></i> FAQs</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="carrers.html"><i class="fas fa-users"></i> Careers</a></li>
+        <li><a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="policies.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        <li><a href="policies.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      
+       <ul>
+           <li><a href="services.html#authorized"><i class="fas fa-check-circle"></i>Authorised Test Center</a></li>
+        <li><a href="services.html#web"><i class="fas fa-desktop"></i> Web Development</a></li>
+        <li><a href="services.html#app"><i class="fas fa-desktop"></i> Mobile App Development</a></li>
+        <li><a href="services.html#marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+         
+        <li><a href="services.html#erp"><i class="fas fa-network-wired"></i> ERP Services</a></li>
+          <li><a href="services.html#consulting"><i class="fas fa-network-wired"></i> IT Consulting & Business Solutions</a></li>
+          <li><a href="services.html#othermarketing"><i class="fas fa-network-wired"></i> Marketing & Co-Working Spaces</a></li>
+     
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 49-1-127, 2nd Floor,<br>Opp. Vidyuth Soudha<br> Vijayawada – 520004</p>
+      <p><i class="fas fa-phone"></i> Phone (General): <a href="tel:+918977787605">+91 8977787605</a></p>
+      <p><i class="fas fa-headset"></i> Phone (Support): <a href="tel:+918977787606">+91 8977787606</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@pandjtechnologies.com"><span style="font-size: 13px;">contact@pandjtechnologies.com</span></a></p>
+    </div>
+
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-bottom">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1BnU7jcy78/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/pandjtech1437"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/pandj-technologies-835796368/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/technologiespj/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Newsletter Form -->
+    <div class="newsletter">
+      <p>Subscribe to our newsletter:</p>
+      <form id="subscribeForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5b9ec738-33ed-438c-9a7f-de11e2251a36">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="success-message" id="successMessage" style="display:none;">
+        ✅ Thank you for subscribing!<br>We only send updates related to our business. No spam.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-credit">
+    © 2025 P & J Technologies. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Your JS file(s) -->
+<script src="pj-footer.js"></script>
+
+
+
+</body>
+</body>
+</html>
