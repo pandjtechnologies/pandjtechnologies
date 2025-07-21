@@ -645,50 +645,64 @@ body {
     }
 
     .about-image-container {
-      position: relative;
-      flex: 1 1 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100%;
-    }
+  position: relative;
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Remove min-height */
+  /* min-height: 100%; */
+  max-width: 100vw; /* prevent overflow */
+  overflow: hidden; /* hide any overflow */
+}
 
-    .about-image-container .image-bg-shape {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      max-width: 420px;
-      background: radial-gradient(circle at center, #e6f0ff 40%, #cce0ff 100%);
-      border-radius: 50% 30% 50% 70% / 60% 40% 70% 50%;
-      z-index: 0;
-      transform: rotate(15deg);
-    }
+.about-image-container .image-bg-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 420px;
+  background: radial-gradient(circle at center, #e6f0ff 40%, #cce0ff 100%);
+  border-radius: 50% 30% 50% 70% / 60% 40% 70% 50%;
+  z-index: 0;
+  transform: rotate(15deg);
+  /* Add left: 0 to make sure it stays inside container */
+  left: 0;
+}
 
-    .about-image {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 16px;
-      position: relative;
-      z-index: 1;
-      object-fit: cover;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* important */
+}
+@media (max-width: 768px) {
+  .about-section {
+    max-width: 100%;      /* Allow full width */
+    padding-left: 15px;   /* Smaller side padding */
+    padding-right: 15px;  /* Smaller side padding */
+    box-sizing: border-box; /* Ensure padding included in width */
+  }
+}
+@media (max-width: 768px) {
+  .about-text {
+    flex-basis: 100%; /* Full width */
+  }
 
-    @media (max-width: 768px) {
-      .about-section {
-        flex-direction: column;
-        text-align: center;
-      }
+  .about-image-container {
+    flex-basis: 100%; /* Full width */
+  }
+  .section-title
 
-      .about-text, .about-image-container {
-        flex: 1 1 100%;
-      }
+ {
+    font-size: 1.6rem;
+}}
 
-      .about-text h2 {
-        font-size: 2rem;
-      }
-    }
+
 
     body {
       margin: 0;
@@ -948,6 +962,30 @@ body {
     <div class="swiper-pagination"></div>
   </div>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
  
   <section class="about-section" id="about" data-aos="fade-up">
     <div class="about-text">
@@ -1014,7 +1052,7 @@ body {
     <!-- Mission & Vision Cards -->
     <div class="pj-card-grid">
       <!-- Mission -->
-      <div class="pj-card" data-aos="fade-right">
+      <div class="pj-card" data-aos="fade-up">
         <div class="pj-card-header">
           <div class="pj-circle-logo">
             <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Mission Logo" />
@@ -1035,7 +1073,7 @@ body {
       </div>
 
       <!-- Vision -->
-      <div class="pj-card" data-aos="fade-left">
+      <div class="pj-card" data-aos="fade-up">
         <div class="pj-card-header">
           <div class="pj-circle-logo">
             <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Vision Logo" />
