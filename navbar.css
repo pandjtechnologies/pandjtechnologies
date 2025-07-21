@@ -1,0 +1,323 @@
+/* navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.pj-header {
+  background: #fff;
+  
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  animation: slideDownFade 0.6s ease-out;
+}
+
+@keyframes slideDownFade {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.pj-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pj-logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pj-logo-wrapper img {
+  height: 80px;
+  width: 80px;
+}
+
+.pj-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #012760;
+ 
+}
+
+.ampersand {
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  padding: 0 4px;
+}
+
+.pj-tagline {
+  margin-top: 2px;
+  background: #012760;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.pj-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+    padding-right: 30px;
+}
+
+.pj-nav ul li {
+  position: relative;
+}
+/* Specifically for navbar links inside .pj-nav */
+.pj-nav ul li a {
+  font-family: 'Inter', sans-serif;  /* keep the same font family */
+  font-weight: 600;                  /* consistent font weight */
+  color: #012760;                   /* navbar link color */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.pj-nav ul li a:hover {
+  background: linear-gradient(to right, #0056b3, #0099cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Optional: force footer styles not to override */
+footer a {
+  font-family: 'Inter', sans-serif; /* if footer uses a different font, keep it */
+  font-weight: 400; /* or whatever the footer font-weight is */
+  /* other footer link styles */
+}
+
+
+
+.pj-arrow {
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+.pj-dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  min-width: 180px;
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  flex-direction: column;
+}
+
+.pj-dropdown-menu.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pj-dropdown-menu a {
+  padding: 10px 20px;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.pj-hamburger {
+  display: none;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.pj-hamburger div {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #012760;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+.pj-hamburger div:nth-child(1) { top: 0; }
+.pj-hamburger div:nth-child(2) { top: 11px; }
+.pj-hamburger div:nth-child(3) { top: 22px; }
+
+.pj-hamburger.active div:nth-child(1) { transform: rotate(45deg); top: 11px; }
+.pj-hamburger.active div:nth-child(2) { opacity: 0; }
+.pj-hamburger.active div:nth-child(3) { transform: rotate(-45deg); top: 11px; }
+
+.pj-mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #012760;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.pj-mobile-nav.active { display: flex; }
+
+.pj-mobile-nav a,
+.pj-mobile-nav .pj-mobile-toggle {
+  color: white;
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pj-mobile-toggle {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pj-mobile-arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.pj-mobile-toggle.open .pj-mobile-arrow {
+  transform: rotate(180deg);
+}
+
+.pj-mobile-submenu {
+  display: none;
+  flex-direction: column;
+  background: #023479;
+}
+
+.pj-mobile-submenu.active {
+  display: flex;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.pj-mobile-submenu a {
+  padding-left: 35px;
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 960px) {
+  .pj-nav ul { display: none; }
+  .pj-hamburger { display: block; }
+}
+
+@media (max-width: 600px) {
+  .company-name { font-size: 26px; margin-top: 11px;}
+  .pj-tagline { font-size: 8px; padding: 1px 4px; }
+}
+
+
+
+
+
+
+
+
+
+
+  
+    /* Loader overlay */
+    #pageLoader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #001f3f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.8s ease, visibility 0.8s;
+    }
+
+    .loader-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .loader-ring-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+
+    .loader-ring {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border: 5px solid rgba(0, 191, 255, 0.2);
+      border-top-color: #00bfff;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+      box-sizing: border-box;
+    }
+
+    .loader-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .loader-text {
+      font-family: 'Inter', sans-serif;
+      color: #ffffff;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded #pageLoader {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+
+.section-wrapper{
+background-color: #fff;
+}

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Page Title</title>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body>
+
+  <!-- Include this header content directly or use a server include if possible -->
+  <!-- Either paste navbar.html content here, or use a partial system (PHP, React, etc.) -->
+  <div id="navbar">
+   
+    <!-- navbar.html -->
+<header class="pj-header">
+  <div class="pj-nav-container">
+    <div class="pj-logo-wrapper">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" />
+      <div class="pj-text-container">
+        <span class="company-name">
+         P <span class="ampersand">&</span> J Technologies
+        </span>
+        <span class="pj-tagline">Proctoring. Justice. Innovation.</span>
+      </div>
+    </div>
+
+    <nav class="pj-nav">
+      <ul>
+        <li id="pj-dropdown-who">
+          <a href="javascript:void(0);" tabindex="0">Who Are We <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-who">
+         <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+          </div>
+        </li>
+        <li id="pj-dropdown-services">
+          <a href="javascript:void(0);" tabindex="0">Services <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-services">
+             <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="pj-hamburger" id="pj-hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="pj-mobile-nav" id="pj-mobile-menu">
+    <div class="pj-mobile-toggle" id="pj-mobile-who-toggle">
+      <span>Who Are We</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-who-menu">
+    <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+
+    </div>
+
+    <div class="pj-mobile-toggle" id="pj-mobile-services-toggle">
+      <span>Services</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-services-menu">
+       <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+    </div>
+
+    <a href="services.html">What We Do</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="faq.html">FAQs</a>
+    <a href="careers.html">Careers</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contactus">Contact</a>
+  </div>
+</header>
+
+  </div>
+  <script src="navbar.js"></script>
+
+
+    <!-- Page Loader -->
+  <div id="pageLoader">
+    <div class="loader-wrapper">
+      <div class="loader-ring-container">
+        <div class="loader-ring"></div>
+        <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="P & J Logo" class="loader-logo">
+      </div>
+      <div class="loader-text">P & J Technologies</div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+ 
+
+  <!-- Script to remove loader -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+
+
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <style>
+    :root {
+      --blue: #012b64;
+      --light-gray: #444;
+      --text-color: #333;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: var(--text-color);
+    }
+
+
+
+
+   
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: var(--blue);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    p, li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+
+ 
+
+    @media (max-width: 768px) {
+      .faq-header {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .faq-header-text {
+        max-width: 100%;
+      }
+
+      .faq-header img {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+
+  
+</head>
+<body>
+  <!-- Full Width FAQ Section -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+ <script src="script.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.faq-header-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-header-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.faq-header-text p {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.faq-header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-header-image img {
+  max-width: 300px;
+  width: 100%;
+
+
+  padding: 10px;
+
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-header {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .faq-header-text h1 {
+    font-size: 36px;
+  }
+
+  .faq-header-image img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
+
+  </style>
+
+  <!-- Testimonials Section Header -->
+<!-- AOS stylesheet (in <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<div class="faq-header" data-aos="fade-up">
+  <div class="faq-header-text">
+    <h2 style="color: white;font-size: 32px;">Privacy Policies & Terms of Service</h2>
+    <p>Your privacy matters – read our policies and terms..</p>
+  </div>
+  <div class="faq-header-image">
+    <img src="https://i.ibb.co/j9YYb6P1/Adobe-Express-file.png" alt="FAQ illustration" />
+  </div>
+</div>
+
+
+
+<!-- AOS script (before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  <!-- Main Content -->
+  <div class="container">
+    <h1 data-aos="fade-up">Privacy Policy</h1>
+
+    <h2 data-aos="fade-up">Introduction</h2>
+    <p data-aos="fade-up">P & J Technologies ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy outlines how we handle your data when you visit our website or use our services.</p>
+
+    <h2 data-aos="fade-up">Information We Collect</h2>
+    <ul data-aos="fade-up">
+      <li>Personal details such as name, email address, phone number</li>
+      <li>Browser and device details</li>
+      <li>Usage data and cookies</li>
+    </ul>
+
+    <h2 data-aos="fade-up">How We Use Information</h2>
+    <p data-aos="fade-up">We use the collected information to improve services, communicate with clients, ensure security, and analyze site performance.</p>
+
+    <h2 data-aos="fade-up">Data Protection</h2>
+    <p data-aos="fade-up">We follow industry-standard security practices to protect your personal data from unauthorized access or disclosure.</p>
+
+    <h2 data-aos="fade-up">Sharing with Third Parties</h2>
+    <p data-aos="fade-up">We do not sell your personal information. We may share it with trusted partners for service delivery only.</p>
+
+    <h2 data-aos="fade-up">Your Rights</h2>
+    <p data-aos="fade-up">You have the right to access, correct, or delete your data. Contact us at <a href="mailto:contact@pandjtechnologies.com">contact@pandjtechnologies.com</a>.</p>
+
+    <h2 data-aos="fade-up">Changes to This Policy</h2>
+    <p data-aos="fade-up">We may update this Privacy Policy from time to time. Updates will be posted on this page.</p>
+
+    <h1 data-aos="fade-up">Terms of Service</h1>
+
+    <h2 data-aos="fade-up">Agreement</h2>
+    <p data-aos="fade-up">By using our website and services, you agree to these Terms of Service. Please read them carefully.</p>
+
+    <h2 data-aos="fade-up">Services</h2>
+    <p data-aos="fade-up">We provide digital services such as Testing Exams, Website Designing, ERP Solutions, and Digital Marketing.</p>
+
+    <h2 data-aos="fade-up">User Obligations</h2>
+    <p data-aos="fade-up">You agree not to misuse our services and to comply with all applicable laws and regulations.</p>
+
+    <h2 data-aos="fade-up">Intellectual Property</h2>
+    <p data-aos="fade-up">All content, branding, and assets are the property of P & J Technologies and cannot be used without permission.</p>
+
+    <h2 data-aos="fade-up">Termination</h2>
+    <p data-aos="fade-up">We reserve the right to suspend or terminate your access if you violate our terms or engage in harmful activity.</p>
+
+    <h2 data-aos="fade-up">Contact</h2>
+    <p data-aos="fade-up">If you have questions about this document, contact us at:</p>
+    <p data-aos="fade-up">
+      📍 49-1-127, 2nd Floor, Opposite Vidyuth Soudha, Vijayawada, 520004<br/>
+      📞 +91 8977787605 / +91 8977787606<br/>
+      ✉️ <a href="mailto:contact@pandjtechnologies.com">contact@pandjtechnologies.com</a>
+    </p>
+  </div>
+
+ 
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+
+  
+
+
+</body>
+
+<!-- Chat panel -->
+<!-- Chat toggle button -->
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="pj-footer.css">
+
+<body>
+
+<!-- Chat toggle button -->
+<div class="chat-toggle" onclick="toggleChat()">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chat Icon">
+</div>
+
+<!-- Chat panel -->
+<div class="chat-panel" id="chatPanel" style="display:none;">
+  <div class="chat-header">
+    Send Us a Message
+    <span class="close" onclick="toggleChat()">×</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="input-area">
+    <input type="text" id="chatInput" placeholder="Your answer..." autocomplete="off" />
+    <button id="sendBtn" disabled>Next</button>
+  </div>
+</div>
+
+<!-- Success toast -->
+<div class="toast" id="successToast" style="display:none;">✅ Thank you! We will connect you shortly.</div>
+
+<!-- Footer HTML -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-col">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" class="footer-logo">
+      <h2>P & J Technologies</h2>
+      <div class="footer-tagline">PROCTORING. JUSTICE. INNOVATION.</div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      
+    <ul>
+        <li><a href="index.html"><i class="fas fa-user"></i> About Us</a></li>
+        <li><a href="Faq.html"><i class="fas fa-users"></i> FAQs</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="carrers.html"><i class="fas fa-users"></i> Careers</a></li>
+        <li><a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="policies.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        <li><a href="policies.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      
+       <ul>
+          <li><a href="services.html#authorized"><i class="fas fa-check-circle"></i>Authorised Test Center</a></li>
+        <li><a href="services.html#web"><i class="fas fa-desktop"></i> Web Development</a></li>
+        <li><a href="services.html#app"><i class="fas fa-desktop"></i> Mobile App Development</a></li>
+        <li><a href="services.html#marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+         
+        <li><a href="services.html#erp"><i class="fas fa-network-wired"></i> ERP Services</a></li>
+          <li><a href="services.html#consulting"><i class="fas fa-network-wired"></i> IT Consulting & Business Solutions</a></li>
+          <li><a href="services.html#othermarketing"><i class="fas fa-network-wired"></i> Marketing & Co-Working Spaces</a></li>
+     
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 49-1-127, 2nd Floor,<br>Opp. Vidyuth Soudha<br> Vijayawada – 520004</p>
+      <p><i class="fas fa-phone"></i> Phone (General): <a href="tel:+918977787605">+91 8977787605</a></p>
+      <p><i class="fas fa-headset"></i> Phone (Support): <a href="tel:+918977787606">+91 8977787606</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@pandjtechnologies.com"><span style="font-size: 13px;">contact@pandjtechnologies.com</span></a></p>
+    </div>
+
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-bottom">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1BnU7jcy78/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/pandjtech1437"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/pandj-technologies-835796368/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/technologiespj/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Newsletter Form -->
+    <div class="newsletter">
+      <p>Subscribe to our newsletter:</p>
+      <form id="subscribeForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5b9ec738-33ed-438c-9a7f-de11e2251a36">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="success-message" id="successMessage" style="display:none;">
+        ✅ Thank you for subscribing!<br>We only send updates related to our business. No spam.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-credit">
+    © 2025 P & J Technologies. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Your JS file(s) -->
+<script src="pj-footer.js"></script>
+
+</body>
+
+</html>

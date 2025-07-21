@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TC68vJr/logo-png.png">
+  <title>Your Page Title</title>
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+<body>
+<style>
+  .pj-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pj-logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pj-logo-wrapper img {
+  height: 85px;
+  width: 85px;
+}
+
+.pj-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #012760;
+ 
+}
+
+
+
+.ampersand {
+  font-family: 'Times New Roman', serif;
+  font-size: 30px;
+  padding: 0 4px;
+}
+
+.pj-tagline {
+  margin-top: 2px;
+  background: #012760;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .ampersand {
+    font-size: 22px; /* Smaller size for mobile */
+
+  }
+  .company-name{
+    font-size: 26px;
+  }
+   .pj-tagline { font-size: 8px; padding: 1px 4px; }
+}
+
+</style>
+  <!-- Include this header content directly or use a server include if possible -->
+  <!-- Either paste navbar.html content here, or use a partial system (PHP, React, etc.) -->
+  <div id="navbar">
+   
+    <!-- navbar.html -->
+<header class="pj-header">
+  <div class="pj-nav-container">
+    <div class="pj-logo-wrapper">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" />
+      <div class="pj-text-container">
+        <span class="company-name">
+         P <span class="ampersand">&</span> J Technologies
+        </span>
+        <span class="pj-tagline">Proctoring. Justice. Innovation.</span>
+      </div>
+    </div>
+
+    <nav class="pj-nav">
+      <ul>
+        <li id="pj-dropdown-who">
+          <a href="javascript:void(0);" tabindex="0">Who Are We <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-who">
+         <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+          </div>
+        </li>
+        <li id="pj-dropdown-services">
+          <a href="javascript:void(0);" tabindex="0">Services <span class="pj-arrow">▼</span></a>
+          <div class="pj-dropdown-menu" id="dropdown-menu-services">
+             <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="pj-hamburger" id="pj-hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div class="pj-mobile-nav" id="pj-mobile-menu">
+    <div class="pj-mobile-toggle" id="pj-mobile-who-toggle">
+      <span>Who Are We</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-who-menu">
+    <a href="index.html#about">About Us</a>
+<a href="index.html#mission">Mission & Vision</a>
+<a href="index.html#clients">Our Clients</a>
+
+
+    </div>
+
+    <div class="pj-mobile-toggle" id="pj-mobile-services-toggle">
+      <span>Services</span>
+      <span class="pj-mobile-arrow">▼</span>
+    </div>
+    <div class="pj-mobile-submenu" id="pj-mobile-services-menu">
+       <a href="services.html#authorized">Authorized Test Center</a>
+<a href="services.html#web">Web Development & UX/UI Design</a>
+<a href="services.html#app">Mobile App Development</a>
+<a href="services.html#marketing">Digital Marketing & SEO</a>
+<a href="services.html#erp">ERP & Business Automation</a>
+<a href="services.html#consulting">IT Consulting & Business Solutions</a>
+<a href="services.html#othermarketing">Marketing</a>
+    </div>
+
+    <a href="services.html">What We Do</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="faq.html">FAQs</a>
+    <a href="careers.html">Careers</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contactus">Contact</a>
+  </div>
+</header>
+
+  </div>
+  <script src="navbar.js"></script>
+
+   <div id="pageLoader">
+    <div class="loader-wrapper">
+      <div class="loader-ring-container">
+        <div class="loader-ring"></div>
+        <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="P & J Logo" class="loader-logo">
+      </div>
+      <div class="loader-text">P & J Technologies</div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+ 
+
+  <!-- Script to remove loader -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+
+</body>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+   html {
+  scroll-behavior: smooth;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #004e92, #000428);
+}
+
+/* Common Header Section (e.g., Careers, Testimonials, etc.) */
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.faq-header-text {
+  flex: 1;
+  min-width: 300px;
+}
+.faq-header h1 {
+ font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.faq-header p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.faq-header img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.faq-container {
+  display: flex;
+  padding: 40px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 768px) {
+  .faq-header {
+    flex-direction: column;
+    padding: 80px 20px 30px; /* ✅ Adjusted for smaller screens */
+    text-align: center;
+  }
+
+  .faq-header-text {
+    max-width: 100%;
+  }
+
+  .faq-header img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .faq-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+
+ <div class="faq-header" data-aos="fade-down">
+    <div class="faq-header-text">
+      <h1>Careers</h1>
+      <p>Build your future with us. Learn more about our teams, values, and job openings.</p>
+    </div>
+    <img src="https://i.ibb.co/bjJWtcfq/carrier-removebg-preview.png" alt="FAQ illustration" />
+  </div>
+  <!-- Job Cards Section -->
+  <section class="bg-gray-100 py-10 px-4">
+    <div class="max-w-6xl mx-auto bg-white p-4 sm:p-6 md:p-10 rounded-2xl shadow-xl space-y-4 sm:space-y-6" data-aos="zoom-in">
+
+      <!-- Reusable Job Card -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-aos="fade-up">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-semibold text-[#004e92]">Proctor (Authorized Exam Monitoring)</h2>
+          <p class="text-sm sm:text-base text-gray-700 mt-1">Supervise candidates during official government/academic exams using secure proctoring tools. Not a BPO role.</p>
+          <p class="text-sm text-gray-600 mt-1">0–2 Yrs Exp · Vijayawada</p>
+        </div>
+        <button onclick="applyFor('Proctor (Authorized Exam Monitoring)')" class="self-end sm:self-auto bg-[#004e92] text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+          Apply Now
+        </button>
+      </div>
+
+      <!-- UI/UX Designer -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-aos="fade-up">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-semibold text-[#004e92]">UI/UX Designer</h2>
+          <p class="text-sm sm:text-base text-gray-700 mt-1">Create wireframes, user journeys, and interactive prototypes using Figma or Adobe XD.</p>
+          <p class="text-sm text-gray-600 mt-1">0–2 Yrs Exp · Vijayawada</p>
+        </div>
+        <button onclick="applyFor('UI/UX Designer')" class="self-end sm:self-auto bg-[#004e92] text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+          Apply Now
+        </button>
+      </div>
+
+      <!-- Web Developer -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-aos="fade-up">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-semibold text-[#004e92]">Web Developer</h2>
+          <p class="text-sm sm:text-base text-gray-700 mt-1">Build and maintain responsive websites and web apps using modern web technologies.</p>
+          <p class="text-sm text-gray-600 mt-1">0–2 Yrs Exp · Vijayawada</p>
+        </div>
+        <button onclick="applyFor('Web Developer')" class="self-end sm:self-auto bg-[#004e92] text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+          Apply Now
+        </button>
+      </div>
+
+      <!-- Process Associate (Non-Voice) -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-aos="fade-up">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-semibold text-[#004e92]">Process Associate (Non-Voice)</h2>
+          <p class="text-sm sm:text-base text-gray-700 mt-1">Support email/chat processes and backend operations efficiently.</p>
+          <p class="text-sm text-gray-600 mt-1">0–2 Yrs Exp · Vijayawada</p>
+        </div>
+        <button onclick="applyFor('Process Associate (Non-Voice)')" class="self-end sm:self-auto bg-[#004e92] text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+          Apply Now
+        </button>
+      </div>
+
+      <!-- Process Associate (Voice) -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-aos="fade-up">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-semibold text-[#004e92]">Process Associate (Voice)</h2>
+          <p class="text-sm sm:text-base text-gray-700 mt-1">Handle voice-based client interactions with clear communication and problem-solving skills.</p>
+          <p class="text-sm text-gray-600 mt-1">0–2 Yrs Exp · Vijayawada</p>
+        </div>
+        <button onclick="applyFor('Process Associate (Voice)')" class="self-end sm:self-auto bg-[#004e92] text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+          Apply Now
+        </button>
+      </div>
+
+      <!-- Internship -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-aos="fade-up">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-semibold text-[#004e92]">Internship</h2>
+          <p class="text-sm sm:text-base text-gray-700 mt-1">Freshers welcome! Intern across tech, design, or backend operations.</p>
+          <p class="text-sm text-gray-600 mt-1">0–2 Yrs Exp · Vijayawada</p>
+        </div>
+        <button onclick="applyFor('Internship')" class="self-end sm:self-auto bg-[#004e92] text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+          Apply Now
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply" class="py-16 px-4 bg-white">
+    <div class="max-w-3xl mx-auto" >
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#004e92] mb-6">Apply Now</h2>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5 bg-gray-50 p-6 sm:p-8 rounded-xl shadow-md" data-aos="zoom-in">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+        <input type="text" name="name" required placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded text-sm" />
+        <input type="email" name="email" required placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded text-sm" />
+        <input type="tel" name="phone" required placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded text-sm" />
+
+        <select id="positionSelect" name="position" required class="w-full p-3 border border-gray-300 rounded bg-white text-sm">
+          <option value="">Select Position Applying For</option>
+          <option>Proctor (Authorized Exam Monitoring)</option>
+          <option>UI/UX Designer</option>
+          <option>Web Developer</option>
+          <option>Process Associate (Non-Voice)</option>
+          <option>Process Associate (Voice)</option>
+          <option>Internship</option>
+        </select>
+
+        <input type="url" name="resume_link" required placeholder="Paste Google Drive / OneDrive Resume Link" class="w-full p-3 border border-gray-300 rounded text-sm" />
+        <textarea name="message" rows="4" placeholder="Tell us something about you..." class="w-full p-3 border border-gray-300 rounded text-sm"></textarea>
+
+        <button type="submit" class="w-full bg-[#004e92] text-white font-semibold py-3 rounded hover:bg-blue-800 transition text-sm">
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+
+  <!-- Scripts -->
+  <script>
+    AOS.init();
+    function applyFor(role) {
+      document.getElementById('positionSelect').value = role;
+      document.getElementById('apply').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Chat panel -->
+<!-- Chat toggle button -->
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="pj-footer.css">
+
+<body>
+
+<!-- Chat toggle button -->
+<div class="chat-toggle" onclick="toggleChat()">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chat Icon">
+</div>
+
+<!-- Chat panel -->
+<div class="chat-panel" id="chatPanel" style="display:none;">
+  <div class="chat-header">
+    Send Us a Message
+    <span class="close" onclick="toggleChat()">×</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="input-area">
+    <input type="text" id="chatInput" placeholder="Your answer..." autocomplete="off" />
+    <button id="sendBtn" disabled>Next</button>
+  </div>
+</div>
+
+<!-- Success toast -->
+<div class="toast" id="successToast" style="display:none;">✅ Thank you! We will connect you shortly.</div>
+
+<!-- Footer HTML -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-col">
+      <img src="https://i.ibb.co/TC68vJr/logo-png.png" alt="Logo" class="footer-logo">
+      <h2>P & J Technologies</h2>
+      <div class="footer-tagline">PROCTORING. JUSTICE. INNOVATION.</div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+    <ul>
+        <li><a href="index.html"><i class="fas fa-user"></i> About Us</a></li>
+        <li><a href="Faq.html"><i class="fas fa-users"></i> FAQs</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="carrers.html"><i class="fas fa-users"></i> Careers</a></li>
+        <li><a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="policies.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        <li><a href="policies.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Our Services</h3>
+      <ul>
+             <li><a href="services.html#authorized"><i class="fas fa-check-circle"></i>Authorised Test Center</a></li>
+        <li><a href="services.html#web"><i class="fas fa-desktop"></i> Web Development</a></li>
+        <li><a href="services.html#app"><i class="fas fa-desktop"></i> Mobile App Development</a></li>
+        <li><a href="services.html#marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+         
+        <li><a href="services.html#erp"><i class="fas fa-network-wired"></i> ERP Services</a></li>
+          <li><a href="services.html#consulting"><i class="fas fa-network-wired"></i> IT Consulting & Business Solutions</a></li>
+          <li><a href="services.html#othermarketing"><i class="fas fa-network-wired"></i> Marketing & Co-Working Spaces</a></li>
+     
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 49-1-127, 2nd Floor,<br>Opp. Vidyuth Soudha<br> Vijayawada – 520004</p>
+      <p><i class="fas fa-phone"></i> Phone (General): <a href="tel:+918977787605">+91 8977787605</a></p>
+      <p><i class="fas fa-headset"></i> Phone (Support): <a href="tel:+918977787606">+91 8977787606</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@pandjtechnologies.com"><span style="font-size: 13px;">contact@pandjtechnologies.com</span></a></p>
+    </div>
+
+  </div>
+
+  <!-- Follow Us -->
+  <div class="footer-bottom">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1BnU7jcy78/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/pandjtech1437"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/pandj-technologies-835796368/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/technologiespj/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Newsletter Form -->
+    <div class="newsletter">
+      <p>Subscribe to our newsletter:</p>
+      <form id="subscribeForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5b9ec738-33ed-438c-9a7f-de11e2251a36">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="success-message" id="successMessage" style="display:none;">
+        ✅ Thank you for subscribing!<br>We only send updates related to our business. No spam.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-credit">
+    © 2025 P & J Technologies. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Your JS file(s) -->
+<script src="pj-footer.js"></script>
+
+</body>
+
+</html>
